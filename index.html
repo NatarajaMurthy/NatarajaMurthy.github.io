@@ -2,12 +2,46 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="CSS/styles.css">
+<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+
+    <title>Nataraja Murthy</title>
+    <META name="keywords"
+          content="nataraja murthy, nataraj, murthy, natarajamurthy, nataraja, , android developer, web developer, yoursNataraj, yoursnataraj">
+    <META name="description"
+          content="Official Website of Nataraja Murthy. Android Developer, Web Developer, Open Source Enthusiast.">
+    <link rel="shortcut icon" href="Images/profile.jpg" type="image/jpeg" />
+    <link rel="canonical" href="https://natarajamurthy.github.io/" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <meta property="og:title" content="Nataraja Murthy">
+    <meta property="og:image"
+          content="https://github.com/NatarajaMurthy/NatarajaMurthy.github.io/raw/master/Images/profile.jpg">
 </head>
-<body>
-
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<!--
 <h2 style="text-align:center">Portfolio</h2>
-
 <div class="card">
   <img src="data:image/jpeg;base64,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" alt="Nataraja Murthy" style="width:143px">
   <h1>Nataraja Murthy</h1>
@@ -17,11 +51,361 @@
     <a href="https://www.youtube.com/channel/UCninsT8lEtwlJYedzYY7bnA?sub_confirmation=1"><i class="fa fa-youtube" target="_blank"></i></a> &nbsp&nbsp
     <a href="https://github.com/yoursNataraj" target="_blank"><i class="fa fa-github"></i></a> &nbsp&nbsp
     <a href="https://www.linkedin.com/in/yoursNataraj/" target="_blank"><i class="fa fa-linkedin"></i></a> &nbsp&nbsp
-    <a href="https://www.hackerrank.com/yoursNataraj?hr_r=1" target="_blank"><i class="fa fa-code"></i></a>  
+    <a href="https://www.hackerrank.com/yoursNataraj?hr_r=1" target="_blank"><i class="fa fa-code"></i></a> 
   </div>
   <p><a href="https://natarajamurthy.blogspot.com/" target="_blank"><button>Contact</button></a></p>
 </div>
+-->
+<nav id="myNavbar" class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <a class="navbar-brand" href="index.html">Nataraja Murthy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                <a class="nav-link" href="#aboutMe">About Me</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
+<!-- Home Section START -->
+<section id="home" style="margin-top: 0%; padding-top: 60px;">
+    <img id="tilt" class="rounded-circle d-block mx-auto m-3" src="Images/profile.png" height="256" width="256"
+         data-aos="zoom-in-up">
+    <div class="h2 mt-2 text-center" style="color: #FFFFFF">Nataraja Murthy</div>
+
+    <div class="cd-intro m-3 text-center">
+        <h4 class="cd-headline slide">
+                <span class="cd-words-wrapper" style="width:200px !important">
+                    <b class="is-visible">❤️ Android</b>
+                    <b>✈️ Kotlin</b>
+                    <b>😍 Open Source</b>
+                    <b>🔥 Firebase</b>
+                    <b>👨🏻‍💻 Enthusiast</b>
+                    <b>✍️ Technical</b>
+                    <b>🇮🇳 Indian</b>
+                </span>
+        </h4>
+    </div>
+
+    <div class="d-flex align-items-center">
+        <a href="https://docs.google.com/document/d/1svPglaQGpak8pA622TJrakeTSE3eKFEe/edit?usp=drive_link&ouid=116600711653268773711&rtpof=true&sd=true"
+           class="btn btn-outline-light d-block mx-auto m-4" target="_blank" role="button"><i
+                class="fas fa-file mr-2"></i>
+            View CV</a>
+    </div>
+
+    <div class="container-fluid d-block mx-auto text-center" style="width:fit-content;" data-aos="fade-up"
+         data-aos-anchor-placement="top-bottom">
+        <a href="mailto: natraja.murthy@gmail.com" href="#" class="far fa-envelope rounded-circle"></a>
+        <a href="https://www.facebook.com/yoursNataraj" target="_blank"
+           class="fab fa-facebook-f rounded-circle"></a>
+        <a href="https://twitter.com/yoursNataraj" target="_blank"
+           class="fab fa-twitter rounded-circle"></a>
+        <a href="https://instagram.com/yoursNataraj/" target="_blank"
+           class="fab fa-instagram rounded-circle"></a>
+        <a href="https://www.linkedin.com/in/yoursNataraj" target="_blank"
+           class="fab fa-linkedin-in rounded-circle"></a>
+        <a href="https://github.com/yoursNataraj" target="_blank"
+           class="fab fa-github-alt rounded-circle"></a>
+        <a href="https://www.youtube.com/channel/UCninsT8lEtwlJYedzYY7bnA?sub_confirmation=1" target="_blank"
+           class="fab fa-youtube rounded-circle"></a>
+        <a href="https://natarajamurthy.blogspot.com/" target="_blank"
+           class="fas fab fa-blog rounded-circle"></a>
+    </div>
+</section>
+<!-- Home Section END -->
+
+<!-- About Section START -->
+<section id="aboutMe">
+    <div class="justify-content-center">
+        <div class="h1 text-center" data-aos="zoom-in-up"><i class="fas fa-user-alt mr-2"></i><b>About</b> Me
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="p text-monospace d-block mx-auto p-4 larger align-self-center" data-aos="zoom-in-down">
+                I am Programmer.<br>
+                Like to learn and discussing about them in YouTube. <br>
+                I love Music 🎵.<br><br><br><br><br>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Section END -->
+
+<!-- Experience Section START -->
+<section id="experience">
+    <div class="h1 text-center" data-aos="zoom-in-up"><i class="fas fa-briefcase"></i> My <b>Experience</b></div>
+    <div class="d-flex align-items-center">
+        <ul class="list-group p-3 mx-auto" style="width: fit-content;" data-aos="zoom-in-down">
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-auto">
+                        <img class="img-responsive rounded m-2" style="background-color: #ffffff;"
+                             src="Images/Company/yupptv.jpg" width="64"
+                             height="64" />
+                    </div>
+                    <div class="col-auto">
+                    <div class="col-auto">
+                        <div class="small" style="color: #b7b6bb">11/2021 - PRESENT</div>
+                        <div class="large font-weight-bold font-italic mt-2" style="color: #FFFFFF;">Software Developer</div>
+                        <div class="large mt-2" style="color: #FFFFFF;"><a class="text-decoration-none"
+                                                                           href="https://yvs.com" target="_blank">Yupptv</a></div>
+                        <div class="small" style="color: #b7b6bb">Hyderabad, Telangana</div>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-auto">
+                        <img class="img-responsive rounded m-2 pr-2 pl-2 fa fa-youtube" style="background-color: #0eccd8;"
+                              width="64"
+                             height="64" />
+                    </div>
+                    <div class="col-auto">
+                        <div class="small" style="color: #b7b6bb">05/2017 - PRESENT</div>
+                        <div class="large font-weight-bold font-italic mt-2" style="color: #FFFFFF;">YouTuber</div>
+                        <div class="large mt-2" style="color: #FFFFFF;"><a class="text-decoration-none"
+                                                                           href="https://www.youtube.com/@yoursNataraj" target="_blank">YouTube</a></div>
+                        <div class="small" style="color: #b7b6bb">Hyderabad, Telangana</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</section>
+<!-- Experience Section END -->
+
+<!-- Community Section START -->
+<!--
+<section id="community">
+    <div class="h1 text-center" data-aos="zoom-in-up"><i class="fas fa-users"></i> My <b>Community</b></div>
+    <div class="d-flex align-items-center">
+        <ul class="list-group p-3 mx-auto" style="width: fit-content;" data-aos="zoom-in-down">
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-auto">
+                        <img class="img m-2 pr-2 pl-2"
+                             src="https://pbs.twimg.com/profile_images/1361975143610806272/XvJlVRxW_400x400.jpg" width="78" />
+                    </div>
+                    <div class="col-auto">
+                        <div class="small" style="color: #b7b6bb">01/2021 - PRESENT</div>
+                        <div class="large font-weight-bold font-italic mt-2" style="color: #FFFFFF;">Organizer</div>
+                        <div class="large mt-2" style="color: #FFFFFF;"><a class="text-decoration-none"
+                                                                           href="https://www.meetup.com/Kotlin-Mumbai/" target="_blank">Nataraja Murthy and Co.</a></div>
+                        <div class="small" style="color: #b7b6bb">India</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</section>
+-->
+<!-- Community Section END -->
+
+<!-- Education Section START -->
+<section id="education">
+    <div class="h1 text-center" data-aos="zoom-in-up"><i class="fas fa-graduation-cap"></i>My <b>Education</b></div>
+    <div class="d-flex align-items-center">
+        <ul class="list-group p-3 mx-auto" data-aos="zoom-in-down">
+            <li class="list-group-item">
+                <div class="small" style="color: #b7b6bb">2013 - 2017</div>
+                <div class="large font-weight-bold mt-2" style="color: #FFFFFF;">JNTU College of Engineering,
+                    Manthani</div>
+                <div class="small" style="color: #b7b6bb">Karimnagar, Telangana</div>
+                <div class="font-weight-light mt-1" style="color: #7b7a7f">Bachelor of Engineering in Computer Science and Engineering</div>
+            </li>
+            <!--<li class="list-group-item">
+                <div class="small" style="color: #b7b6bb">2015 - 2018</div>
+                <div class="large font-weight-bold mt-2" style="color: #FFFFFF;">Government Polytechnic, Jalgaon
+                </div>
+                <div class="small" style="color: #b7b6bb">Jalgaon, Maharashtra</div>
+                <div class="font-weight-light mt-1" style="color: #7b7a7f">Diploma in Information Technology</div>
+            </li> -->
+            <br><br><br>
+        </ul>
+    </div>
+
+</section>
+<!-- Education Section END -->
+
+<!-- Skills Section START -->
+<section id="skills">
+    <div class="h1 text-center" data-aos="zoom-in-up"><i class="fas fa-star"></i>My <b>Skills</b></div>
+    <div class="container-fluid d-block mx-auto text-center" style="width:fit-content;">
+        <div class="h4 mt-4">Languages:</div>
+        <div class="row justify-content-center align-items-center" data-aos="fade-down" data-aos-easing="linear"
+             data-aos-duration="500">
+            <div class="skill" style="color: #e43e00">
+                <div class="fab fa-java  p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">Java</div>
+            </div>
+            <div class="skill" style="color: #cf4237">
+                <div class="fas fa-code p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">Kotlin</div>
+            </div>
+            <div class="skill" style="color: #2099df">
+                <div class="fas fa-code p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">Dart</div>
+            </div>
+            <div class="skill" style="color: #b2b200">
+                <div class="fab fa-js-square  p-0 m-1" style="font-size: 30px;"></div>
+                <div class="font-weight-bold">JavaScript</div>
+            </div>
+            <div class="skill" style="color: #cf5b1e">
+                <div class="fab fa-html5  p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">HTML</div>
+            </div>
+            <div class="skill" style="color: #559cc4">
+                <div class="fab fa-css3  p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">CSS</div>
+            </div>
+            <div class="skill" style="color: #f3c623">
+                <div class="fab fa-python p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">Python</div>
+            </div>
+            <div class="skill" style="color: #597fb2">
+                <div class="fab fa-php  p-0 m-1" style="font-size: 30px;"></div>
+                <div class="font-weight-bold">PHP</div>
+            </div>
+        </div>
+
+        <div class="h4 mt-4">Technologies/Frameworks:</div>
+        <div class="row justify-content-center align-items-center" data-aos="fade-down" data-aos-easing="linear"
+             data-aos-duration="500">
+            <div class="skill" style="color: #29bf0f">
+                <div class="fab fa-android p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">Android</div>
+            </div>
+            <div class="skill" style="color: #0f96bf">
+                <div class="fas fa-mobile p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">Flutter</div>
+            </div>
+            <div class="skill" style="color: #cf4237">
+                <div class="fas fa-code p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">Micronaut</div>
+            </div>
+            <div class="skill" style="color: #cf4237">
+                <div class="fas fa-code p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">Ktor</div>
+            </div>
+            <div class="skill" style="color: #00ff22">
+                <div class="fab fa-node p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">Node.js</div>
+            </div>
+            <div class="skill" style="color: #32e0c4">
+                <div class="fab fa-python p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">Django</div>
+            </div>
+        </div>
+
+        <div class="h4 mt-4">Databases:</div>
+        <div class="row justify-content-center align-items-center" data-aos="fade-down" data-aos-easing="linear"
+             data-aos-duration="500">
+            <div class="skill" style="color: #6685e4">
+                <div class="fas fa-database  p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">SQL</div>
+            </div>
+            <div class="skill" style="color: #046e16">
+                <div class="fas fa-database  p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">MongoDB</div>
+            </div>
+            <div class="skill" style="color: #FFA000">
+                <div class="fas fa-fire p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">Firebase</div>
+            </div>
+        </div>
+
+        <div class="h4 mt-4">Tools:</div>
+        <div class="row justify-content-center align-items-center" data-aos="fade-down" data-aos-easing="linear"
+             data-aos-duration="500">
+            <div class="skill" style="color: #ffffff">
+                <div class="fab fa-git-square  p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">Git</div>
+            </div>
+            <div class="skill" style="color: #ffffff">
+                <div class="fab fa-github-square  p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">GitHub</div>
+            </div>
+            <div class="skill" style="color: #ffffff">
+                <div class="fab fa-github-square  p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">GitHub Actions</div>
+            </div>
+            <div class="skill" style="color: #FFA000">
+                <div class="fas fa-fire p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">Firebase</div>
+            </div>
+            <div class="skill" style="color: #FFA000">
+                <div class="fab fa-aws p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">AWS</div>
+            </div>
+        </div>
+
+        <div class="h4 mt-4">Other:</div>
+        <div class="row justify-content-center align-items-center" data-aos="fade-down" data-aos-easing="linear"
+             data-aos-duration="500">
+            <div class="skill" style="color: #ffffff">
+                <div class="fas fa-pen-alt p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">Technical Writing</div>
+            </div>
+            <div class="skill" style="color: #ffffff">
+                <div class="fas fa-user-friends  p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">Team Management</div>
+            </div>
+            <div class="skill" style="color: #ffffff">
+                <div class="fas fa-users p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">Team Leadership</div>
+            </div>
+            <div class="skill" style="color: #ffffff">
+                <div class="fas fa-palette p-0 m-1" style="font-size: 30px"></div>
+                <div class="font-weight-bold">UI/UX Designing</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Skills Section END -->
+
+<!-- Footer -->
+<footer class="m-3 mx-auto">
+    <div class="text-center text-white p-3" style="background-color: rgba(0,0,0,0.8)">Cloned By: GitHub
+    </div>
+</footer>
+
+<!-- Statcounter -->
+<script type="text/javascript">
+    var sc_project = 12121673;
+    var sc_invisible = 1;
+    var sc_security = "206010bd";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript>
+    <div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img
+            class="statcounter" src="https://c.statcounter.com/12121673/0/206010bd/1/" alt="Web Analytics"></a>
+    </div>
+</noscript>
+<!-- End of Statcounter Code -->
+
+<!-- Initialize Animation -->
+<script>
+    AOS.init();
+</script>
+<script src="js/main.js"></script>
 </body>
 </html>
 
