@@ -10,147 +10,283 @@
     <meta name="description" content="Privacy Policy for Money Flow Tracker application.">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            background: #121212;
-            color: #ffffff;
+            background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 100%);
+            color: #bdc3c7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
-        .container {
+        nav {
+            background: linear-gradient(90deg, #27ae60 0%, #229954 100%);
+            box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+            padding: 1rem 0;
+        }
+
+        nav .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: white !important;
+        }
+
+        nav .navbar-brand i {
+            margin-right: 0.5rem;
+        }
+
+        .header-section {
+            padding: 40px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(39, 174, 96, 0.1) 0%, rgba(34, 153, 84, 0.05) 100%);
+            border-bottom: 2px solid rgba(39, 174, 96, 0.3);
+        }
+
+        .header-section h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #27ae60;
+        }
+
+        .header-section i {
+            font-size: 2.5rem;
+            color: #27ae60;
+            margin-right: 0.5rem;
+        }
+
+        .main-container {
+            flex: 1;
+            padding: 50px 20px;
             max-width: 900px;
-            margin-top: 50px;
+            margin: 0 auto;
+            width: 100%;
         }
 
-        h1,
-        h2,
+        h1, h2, h3 {
+            color: #27ae60;
+            font-weight: 600;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+        }
+
         h3 {
-            color: #4CAF50;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .policy-section {
+            background: linear-gradient(135deg, #1e2936 0%, #0f1419 100%);
+            border-left: 4px solid #27ae60;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid rgba(39, 174, 96, 0.3);
+        }
+
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            line-height: 1.8;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        strong {
+            color: #27ae60;
         }
 
         a {
-            color: #4CAF50;
+            color: #27ae60;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
 
-        .footer {
+        a:hover {
+            color: #2ecc71;
+        }
+
+        .last-updated {
+            color: #95a5a6;
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin: 2rem 0;
+            padding: 0.75rem 1.5rem;
+            background: rgba(39, 174, 96, 0.2);
+            border: 1px solid rgba(39, 174, 96, 0.5);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            color: #27ae60;
+        }
+
+        .back-link:hover {
+            background: rgba(39, 174, 96, 0.4);
+            border-color: #27ae60;
+            color: #2ecc71;
+        }
+
+        footer {
+            background: rgba(15, 20, 25, 0.8);
+            border-top: 1px solid rgba(39, 174, 96, 0.3);
             text-align: center;
-            padding: 20px;
-            margin-top: 50px;
+            padding: 2rem;
+            color: #bdc3c7;
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            .header-section h1 {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../">
+                <i class="fas fa-money-bill-wave"></i>Money Flow Tracker
+            </a>
+        </div>
+    </nav>
 
-        <h1>Privacy Policy</h1>
-
-        <p><strong>Last Updated:</strong> June 15, 2026</p>
-
-        <p>
-            Money Flow Tracker ("MFT", "we", "our", or "us") respects your privacy and is committed to protecting your
-            information. This Privacy Policy explains how information is collected, used, and protected when you use the
-            Money Flow Tracker application.
-        </p>
-
-        <h3>Information We Collect</h3>
-
-        <p>The application may collect information that you voluntarily provide, including:</p>
-
-        <ul>
-            <li>Income records</li>
-            <li>Expense records</li>
-            <li>Account names and balances</li>
-            <li>Budget information</li>
-            <li>Transaction categories</li>
-            <li>Transaction notes</li>
-            <li>Savings goals</li>
-            <li>Receipt images uploaded by users (optional)</li>
-        </ul>
-
-        <h3>How We Use Information</h3>
-
-        <ul>
-            <li>Provide application functionality</li>
-            <li>Generate reports and analytics</li>
-            <li>Improve user experience</li>
-            <li>Improve application performance and stability</li>
-            <li>Provide future AI-powered financial insights</li>
-        </ul>
-
-        <h3>Third-Party Services</h3>
-
-        <p>
-            The application may use third-party services that may collect information according to their own privacy
-            policies.
-        </p>
-
-        <ul>
-            <li>Google Play Services</li>
-            <li>Firebase Analytics</li>
-            <li>Firebase Crashlytics</li>
-            <li>Google AdMob (if advertisements are enabled)</li>
-        </ul>
-
-        <h3>Data Security</h3>
-
-        <p>
-            We take reasonable measures to protect user information against unauthorized access, alteration, disclosure,
-            or destruction. However, no method of electronic storage or transmission over the Internet is completely
-            secure.
-        </p>
-
-        <h3>Data Retention</h3>
-
-        <p>
-            User data is retained only as long as necessary to provide application functionality and comply with
-            applicable legal requirements.
-        </p>
-
-        <h3>Children's Privacy</h3>
-
-        <p>
-            Money Flow Tracker is not intended for children under 13 years of age. We do not knowingly collect personal
-            information from children.
-        </p>
-
-        <h3>Your Rights</h3>
-
-        <ul>
-            <li>Review your information</li>
-            <li>Delete your application data</li>
-            <li>Uninstall the application at any time</li>
-        </ul>
-
-        <h3>Changes to This Privacy Policy</h3>
-
-        <p>
-            We may update this Privacy Policy from time to time. Updates will be posted on this page with a revised
-            date.
-        </p>
-
-        <h3>Contact Us</h3>
-
-        <p>
-            If you have any questions regarding this Privacy Policy, please contact:
-        </p>
-
-        <p>
-            <strong>Nataraja Murthy</strong><br>
-            Email: <a href="mailto:natraja.murthy@gmail.com">natraja.murthy@gmail.com</a>
-        </p>
-
-        <p>
-            <a href="../">← Back to Money Flow Tracker</a>
-        </p>
-
+    <div class="header-section">
+        <h1><i class="fas fa-shield-alt"></i>Privacy Policy</h1>
+        <p>We take your privacy seriously</p>
     </div>
 
-    <div class="footer">
+    <div class="main-container">
+
+        <p class="last-updated"><strong>Last Updated:</strong> June 15, 2026</p>
+
+        <div class="policy-section">
+            <p>
+                Money Flow Tracker ("MFT", "we", "our", or "us") respects your privacy and is committed to protecting your
+                information. This Privacy Policy explains how information is collected, used, and protected when you use the
+                Money Flow Tracker application.
+            </p>
+        </div>
+
+        <h3><i class="fas fa-database"></i> Information We Collect</h3>
+        <div class="policy-section">
+            <p>The application may collect information that you voluntarily provide, including:</p>
+            <ul>
+                <li>Income records</li>
+                <li>Expense records</li>
+                <li>Account names and balances</li>
+                <li>Budget information</li>
+                <li>Transaction categories</li>
+                <li>Transaction notes</li>
+                <li>Savings goals</li>
+                <li>Receipt images uploaded by users (optional)</li>
+            </ul>
+        </div>
+
+        <h3><i class="fas fa-cogs"></i> How We Use Information</h3>
+        <div class="policy-section">
+            <ul>
+                <li>Provide application functionality</li>
+                <li>Generate reports and analytics</li>
+                <li>Improve user experience</li>
+                <li>Improve application performance and stability</li>
+                <li>Provide future AI-powered financial insights</li>
+            </ul>
+        </div>
+
+        <h3><i class="fas fa-network-wired"></i> Third-Party Services</h3>
+        <div class="policy-section">
+            <p>
+                The application may use third-party services that may collect information according to their own privacy
+                policies.
+            </p>
+            <ul>
+                <li>Google Play Services</li>
+                <li>Firebase Analytics</li>
+                <li>Firebase Crashlytics</li>
+                <li>Google AdMob (if advertisements are enabled)</li>
+            </ul>
+        </div>
+
+        <h3><i class="fas fa-lock"></i> Data Security</h3>
+        <div class="policy-section">
+            <p>
+                We take reasonable measures to protect user information against unauthorized access, alteration, disclosure,
+                or destruction. However, no method of electronic storage or transmission over the Internet is completely
+                secure.
+            </p>
+        </div>
+
+        <h3><i class="fas fa-hourglass-half"></i> Data Retention</h3>
+        <div class="policy-section">
+            <p>
+                User data is retained only as long as necessary to provide application functionality and comply with
+                applicable legal requirements.
+            </p>
+        </div>
+
+        <h3><i class="fas fa-child"></i> Children's Privacy</h3>
+        <div class="policy-section">
+            <p>
+                Money Flow Tracker is not intended for children under 13 years of age. We do not knowingly collect personal
+                information from children.
+            </p>
+        </div>
+
+        <h3><i class="fas fa-user-check"></i> Your Rights</h3>
+        <div class="policy-section">
+            <ul>
+                <li>Review your information</li>
+                <li>Delete your application data</li>
+                <li>Uninstall the application at any time</li>
+            </ul>
+        </div>
+
+        <h3><i class="fas fa-refresh"></i> Changes to This Privacy Policy</h3>
+        <div class="policy-section">
+            <p>
+                We may update this Privacy Policy from time to time. Updates will be posted on this page with a revised
+                date.
+            </p>
+        </div>
+
+        <h3><i class="fas fa-comments"></i> Contact Us</h3>
+        <div class="policy-section">
+            <p>If you have any questions regarding this Privacy Policy, please contact:</p>
+            <p><strong>Nataraja Murthy</strong><br>
+            Email: <a href="mailto:natraja.murthy@gmail.com">natraja.murthy@gmail.com</a></p>
+        </div>
+
+        <a href="../" class="back-link"><i class="fas fa-arrow-left"></i> Back to Money Flow Tracker</a>
+    </div>
+
+    <footer>
         © 2026 Money Flow Tracker | Developed by Nataraja Murthy
-    </div>
+    </footer>
 
 </body>
 

@@ -8,76 +8,245 @@
     <title>Money Flow Tracker - Terms and Conditions</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            background: #121212;
-            color: white;
+            background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 100%);
+            color: #bdc3c7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
-        .container {
-            max-width: 900px;
-            margin-top: 50px;
+        nav {
+            background: linear-gradient(90deg, #27ae60 0%, #229954 100%);
+            box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+            padding: 1rem 0;
         }
 
-        .footer {
+        nav .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: white !important;
+        }
+
+        nav .navbar-brand i {
+            margin-right: 0.5rem;
+        }
+
+        .header-section {
+            padding: 40px 20px;
             text-align: center;
-            margin-top: 50px;
-            padding: 20px;
+            background: linear-gradient(135deg, rgba(39, 174, 96, 0.1) 0%, rgba(34, 153, 84, 0.05) 100%);
+            border-bottom: 2px solid rgba(39, 174, 96, 0.3);
+        }
+
+        .header-section h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #27ae60;
+        }
+
+        .header-section i {
+            font-size: 2.5rem;
+            color: #27ae60;
+            margin-right: 0.5rem;
+        }
+
+        .main-container {
+            flex: 1;
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        h1, h2, h3 {
+            color: #27ae60;
+            font-weight: 600;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .terms-section {
+            background: linear-gradient(135deg, #1e2936 0%, #0f1419 100%);
+            border-left: 4px solid #27ae60;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid rgba(39, 174, 96, 0.3);
+        }
+
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            line-height: 1.8;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        strong {
+            color: #27ae60;
+        }
+
+        a {
+            color: #27ae60;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #2ecc71;
+        }
+
+        .last-updated {
+            color: #95a5a6;
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin: 2rem 0;
+            padding: 0.75rem 1.5rem;
+            background: rgba(39, 174, 96, 0.2);
+            border: 1px solid rgba(39, 174, 96, 0.5);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            color: #27ae60;
+        }
+
+        .back-link:hover {
+            background: rgba(39, 174, 96, 0.4);
+            border-color: #27ae60;
+            color: #2ecc71;
+        }
+
+        footer {
+            background: rgba(15, 20, 25, 0.8);
+            border-top: 1px solid rgba(39, 174, 96, 0.3);
+            text-align: center;
+            padding: 2rem;
+            color: #bdc3c7;
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            .header-section h1 {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../">
+                <i class="fas fa-money-bill-wave"></i>Money Flow Tracker
+            </a>
+        </div>
+    </nav>
 
-        <h1>Terms and Conditions</h1>
-
-        <p>Last Updated: June 2026</p>
-
-        <h3>Acceptance of Terms</h3>
-        <p>
-            By using Money Flow Tracker, you agree to these Terms and Conditions.
-        </p>
-
-        <h3>Application Usage</h3>
-        <p>
-            Money Flow Tracker is provided for personal finance tracking and budgeting purposes.
-        </p>
-
-        <h3>User Responsibilities</h3>
-        <ul>
-            <li>Maintain accurate financial records.</li>
-            <li>Keep device credentials secure.</li>
-            <li>Use the application lawfully.</li>
-        </ul>
-
-        <h3>Disclaimer</h3>
-        <p>
-            Money Flow Tracker does not provide financial, investment, legal, or tax advice.
-        </p>
-
-        <h3>Limitation of Liability</h3>
-        <p>
-            The developer shall not be liable for any financial decisions made using information generated by the
-            application.
-        </p>
-
-        <h3>Changes</h3>
-        <p>
-            These terms may be updated periodically.
-        </p>
-
-        <p>
-            <a href="../">← Back to Money Flow Tracker</a>
-        </p>
-
+    <div class="header-section">
+        <h1><i class="fas fa-file-contract"></i>Terms and Conditions</h1>
+        <p>Please read these terms carefully before using our application</p>
     </div>
 
-    <div class="footer">
-        © 2026 Money Flow Tracker
+    <div class="main-container">
+        <p class="last-updated"><strong>Last Updated:</strong> June 2026</p>
+
+        <h3><i class="fas fa-handshake"></i> Acceptance of Terms</h3>
+        <div class="terms-section">
+            <p>
+                By using Money Flow Tracker, you agree to these Terms and Conditions in their entirety.
+            </p>
+        </div>
+
+        <h3><i class="fas fa-cogs"></i> Application Usage</h3>
+        <div class="terms-section">
+            <p>
+                Money Flow Tracker is provided for personal finance tracking and budgeting purposes only. Users must be at least 13 years old to use this application.
+            </p>
+        </div>
+
+        <h3><i class="fas fa-tasks"></i> User Responsibilities</h3>
+        <div class="terms-section">
+            <ul>
+                <li>Maintain accurate financial records</li>
+                <li>Keep device credentials and passwords secure</li>
+                <li>Use the application lawfully and ethically</li>
+                <li>Not attempt to bypass security measures or access unauthorized features</li>
+                <li>Report any suspected security breaches immediately</li>
+            </ul>
+        </div>
+
+        <h3><i class="fas fa-exclamation-triangle"></i> Disclaimer</h3>
+        <div class="terms-section">
+            <p>
+                Money Flow Tracker does not provide financial, investment, legal, or tax advice. The application is for informational purposes only. Any financial decisions should be made with consultation from qualified professionals.
+            </p>
+        </div>
+
+        <h3><i class="fas fa-shield-alt"></i> Limitation of Liability</h3>
+        <div class="terms-section">
+            <p>
+                The developer, Nataraja Murthy, shall not be liable for any:
+            </p>
+            <ul>
+                <li>Financial decisions made using information generated by the application</li>
+                <li>Data loss or corruption</li>
+                <li>Unauthorized access to user data</li>
+                <li>Application errors or malfunctions</li>
+                <li>Indirect or consequential damages</li>
+            </ul>
+        </div>
+
+        <h3><i class="fas fa-refresh"></i> Changes to Terms</h3>
+        <div class="terms-section">
+            <p>
+                These Terms and Conditions may be updated periodically. Users will be notified of significant changes. Continued use of the application after changes constitutes acceptance of the new terms.
+            </p>
+        </div>
+
+        <h3><i class="fas fa-comments"></i> Governing Law</h3>
+        <div class="terms-section">
+            <p>
+                These Terms and Conditions are governed by applicable laws and regulations. Any disputes shall be resolved through appropriate legal channels.
+            </p>
+        </div>
+
+        <a href="../" class="back-link"><i class="fas fa-arrow-left"></i> Back to Money Flow Tracker</a>
     </div>
+
+    <footer>
+        © 2026 Money Flow Tracker | Developed by Nataraja Murthy
+    </footer>
 
 </body>
 
