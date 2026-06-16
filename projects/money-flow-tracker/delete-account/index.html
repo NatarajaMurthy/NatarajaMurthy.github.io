@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Money Flow Tracker - Contact Us</title>
+    <title>Money Flow Tracker - Account Deletion</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -19,7 +19,7 @@
 
         body {
             background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 100%);
-            color: white;
+            color: #bdc3c7;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             min-height: 100vh;
             display: flex;
@@ -65,63 +65,52 @@
         .main-container {
             flex: 1;
             padding: 50px 20px;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             width: 100%;
         }
 
-        .contact-card {
+        h2,
+        h3 {
+            color: #27ae60;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p,
+        li {
+            line-height: 1.8;
+        }
+
+        ul {
+            margin-left: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+        }
+
+        .notice {
+            background: rgba(39, 174, 96, 0.08);
+            border-left: 4px solid #27ae60;
+            padding: 1rem 1.25rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+        }
+
+        .contact-box {
             background: linear-gradient(135deg, #1e2936 0%, #0f1419 100%);
             border: 1px solid rgba(39, 174, 96, 0.3);
             border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            transition: all 0.3s ease;
+            padding: 1.75rem;
+            margin-top: 2rem;
         }
 
-        .contact-card:hover {
-            border-color: #27ae60;
-            box-shadow: 0 8px 25px rgba(39, 174, 96, 0.2);
-        }
-
-        .contact-card h3 {
-            color: #27ae60;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
-
-        .contact-card i {
-            color: #27ae60;
-            margin-right: 0.5rem;
-            font-size: 1.2rem;
-        }
-
-        .contact-card p {
-            color: #bdc3c7;
-            line-height: 1.8;
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-
-        .contact-item strong {
-            color: white;
-            margin-right: 0.5rem;
-        }
-
-        a {
+        .contact-box a {
             color: #27ae60;
             text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        a:hover {
-            color: #2ecc71;
         }
 
         .back-link {
@@ -137,6 +126,16 @@
         .back-link:hover {
             background: rgba(39, 174, 96, 0.4);
             border-color: #27ae60;
+        }
+
+        a {
+            color: #27ae60;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #2ecc71;
         }
 
         footer {
@@ -167,32 +166,44 @@
     </nav>
 
     <div class="header-section">
-        <h1><i class="fas fa-envelope"></i>Contact Us</h1>
-        <p>Need help with Money Flow Tracker? Get in touch with us!</p>
+        <h1><i class="fas fa-trash-alt"></i>Account Deletion</h1>
+        <p>Request deletion of your Money Flow Tracker account and all associated data.</p>
     </div>
 
     <div class="main-container">
-        <div class="contact-card">
-            <h3><i class="fas fa-at"></i>Email</h3>
-            <p>
-                <a href="mailto:teamofnatarajamurthy@gmail.com">teamofnatarajamurthy@gmail.com</a>
-            </p>
+        <p>If you want to delete your Money Flow Tracker account, please follow one of the methods below. We will verify your request and permanently remove your account data within 30 days.</p>
+
+        <h2>How to request deletion</h2>
+        <ul>
+            <li>Open the Money Flow Tracker app and use the Delete Account option (if available)</li>
+            <li>Email <a href="mailto:teamofnatarajamurthy@gmail.com">teamofnatarajamurthy@gmail.com</a> with the subject "Account Deletion Request"</li>
+        </ul>
+
+        <div class="notice">
+            <strong>Please include:</strong>
+            <ul>
+                <li>The email address associated with your account.</li>
+            </ul>
         </div>
 
-        <div class="contact-card">
-            <h3><i class="fas fa-globe"></i>Website</h3>
-            <p>
-                <a href="https://natarajamurthy.github.io" target="_blank">natarajamurthy.github.io</a>
-            </p>
+        <h2>Data that will be deleted</h2>
+        <ul>
+            <li>Account information</li>
+            <li>Expense and income records</li>
+            <li>Budgets and categories</li>
+            <li>Cloud backup data stored in Firebase/Firestore</li>
+            <li>Profile information</li>
+        </ul>
+
+        <h2>Data retention</h2>
+        <p>Account and associated data are permanently deleted within 30 days of request verification. Certain records may be retained if required by law, security, or fraud-prevention purposes.</p>
+
+        <div class="contact-box">
+            <h3>Contact</h3>
+            <p>For account deletion requests, email us at <a href="mailto:teamofnatarajamurthy@gmail.com">teamofnatarajamurthy@gmail.com</a>.</p>
         </div>
 
-        <div class="contact-card">
-            <h3><i class="fas fa-user"></i>Developer</h3>
-            <p><strong>Nataraja Murthy</strong></p>
-            <p>Android Developer | Web Developer | Open Source Enthusiast</p>
-        </div>
-
-        <a href="../" class="back-link"><i class="fas fa-arrow-left"></i>Back to Money Flow Tracker</a>
+        <a href="../" class="back-link"><i class="fas fa-arrow-left"></i> Back to Money Flow Tracker</a>
     </div>
 
     <footer>
