@@ -1,0 +1,187 @@
+{
+  "nav": {
+    "skip": "Skip to content",
+    "brand": "Money Flow Tracker",
+    "back": "Back to Money Flow Tracker"
+  },
+  "hero": {
+    "title": "Money Flow Tracker",
+    "subtitle": "Manage personal finances, expenses, budgets and savings goals with ease and precision."
+  },
+  "features": {
+    "heading": "Features",
+    "sub": "A concise overview of what Money Flow Tracker offers — organized by capability.",
+    "transaction": {
+      "title": "1. Comprehensive Transaction Management",
+      "items": [
+        "Income & Expense Tracking: Log amounts, dates, notes and tags for each transaction.",
+        "Detailed History: Transactions screen with filtering and search (SearchQuery).",
+        "Account-Based Organization: Manage multiple accounts (Bank, Cash, Cards)."
+      ]
+    },
+    "budget": {
+      "title": "2. Smart Budgeting & Goal Setting",
+      "items": [
+        "Budget Planning: Create and edit budgets by category (AddEditBudgetDialog).",
+        "Progress Tracking: Visual indicators showing remaining budget.",
+        "Financial Goals: Track long-term savings and commitments."
+      ]
+    },
+    "insights": {
+      "title": "3. Advanced Insights & Analytics",
+      "items": [
+        "Visual Trends: Interactive TrendBarCharts for spending over time.",
+        "Category Breakdown: See which categories consume your budget.",
+        "Data-Driven Decisions: Use history to identify savings opportunities."
+      ]
+    },
+    "loan": {
+      "title": "4. Loan & Debt Management",
+      "items": [
+        "Loan Tracking: Manage borrowed/lent money with LoanSettings and DAO support.",
+        "Repayment Reminders: Keep track of deadlines and commitments."
+      ]
+    },
+    "categories": {
+      "title": "5. Personalized Category Management",
+      "items": [
+        "Custom Categories: Create, edit, and delete categories via CategoriesScreen.",
+        "Pre-seeded Data: Default categories included for a fast start."
+      ]
+    },
+    "notifications": {
+      "title": "6. Intelligent Notifications & Reminders",
+      "items": [
+        "Daily Summaries: Receive a daily recap of spending.",
+        "Smart Alerts: WorkManager-driven alerts for budget limits and goals.",
+        "Core Alerts: High-priority notifications for critical updates."
+      ]
+    },
+    "cloud": {
+      "title": "7. Cloud Integration & Security",
+      "items": [
+        "Secure Authentication: Firebase Auth and Google Sign-In support.",
+        "Real-time Sync: Optional Firebase Database sync across devices.",
+        "Enhanced Security: Google reCAPTCHA and Crashlytics for reliability."
+      ]
+    },
+    "premium": {
+      "title": "8. Premium Experience & Maintenance",
+      "items": [
+        "In-App Purchases: Google Play Billing for premium features.",
+        "User Feedback: Built-in FeedbackScreen for suggestions.",
+        "Seamless Updates: Google Play App Update API integration.",
+        "Modern UI: Built with Jetpack Compose and Material3 (dark-mode ready)."
+      ]
+    },
+    "privacy": {
+      "title": "9. Privacy-First Approach",
+      "items": [
+        "Local Persistence: Room Database as primary on-device storage.",
+        "Preference Management: DataStore Preferences for settings and onboarding state."
+      ]
+    }
+  },
+  "cards": {
+    "privacy": { "title": "Privacy Policy", "desc": "Learn how we protect your data" },
+    "terms": { "title": "Terms & Conditions", "desc": "Review our terms of service" },
+    "contact": { "title": "Contact Us", "desc": "Get in touch with our team" },
+    "support": { "title": "Support", "desc": "Find answers and get help" },
+    "delete": { "title": "Delete Account", "desc": "Request permanent deletion of your account and data" }
+  },
+  "footer": "© 2026 Money Flow Tracker | Developed by Nataraja Murthy",
+  "portfolio": "Portfolio",
+  "pages": {
+    "contact": {
+      "subtitle": "Need help with Money Flow Tracker? Get in touch with us!",
+      "businessTitle": "Business Inquiries",
+      "websiteTitle": "Website",
+      "developerTitle": "Developer",
+      "developerRole": "Android Developer | Web Developer | Open Source Enthusiast"
+    },
+    "privacy": {
+      "subtitle": "We take your privacy seriously",
+      "lastUpdated": "Last Updated:",
+      "date": "June 15, 2026",
+      "intro": "Money Flow Tracker (\"MFT\", \"we\", \"our\", or \"us\") respects your privacy and is committed to protecting your information. This Privacy Policy explains how information is collected, used, and protected when you use the Money Flow Tracker application.",
+      "collectTitle": "Information We Collect",
+      "collectIntro": "The application may collect information that you voluntarily provide, including:",
+      "collectItems": ["Income records", "Expense records", "Account names and balances", "Budget information", "Transaction categories", "Transaction notes", "Savings goals", "Receipt images uploaded by users (optional)"],
+      "useTitle": "How We Use Information",
+      "useItems": ["Provide application functionality", "Generate reports and analytics", "Improve user experience", "Improve application performance and stability", "Provide future AI-powered financial insights"],
+      "thirdPartyTitle": "Third-Party Services",
+      "thirdPartyText": "The application may use third-party services that may collect information according to their own privacy policies.",
+      "adMob": "Google AdMob (if advertisements are enabled)",
+      "securityTitle": "Data Security",
+      "securityText": "We take reasonable measures to protect user information against unauthorized access, alteration, disclosure, or destruction. However, no method of electronic storage or transmission over the Internet is completely secure.",
+      "retentionTitle": "Data Retention",
+      "retentionText": "User data is retained only as long as necessary to provide application functionality and comply with applicable legal requirements.",
+      "childrenTitle": "Children's Privacy",
+      "childrenText": "Money Flow Tracker is not intended for children under 13 years of age. We do not knowingly collect personal information from children.",
+      "rightsTitle": "Your Rights",
+      "rightsItems": ["Review your information", "Delete your application data", "Uninstall the application at any time"],
+      "changesTitle": "Changes to This Privacy Policy",
+      "changesText": "We may update this Privacy Policy from time to time. Updates will be posted on this page with a revised date.",
+      "contactTitle": "Contact Us",
+      "contactText": "If you have any questions regarding this Privacy Policy, please contact:",
+      "contactTeam": "MFT Privacy Team",
+      "emailLabel": "Email:"
+    },
+    "support": {
+      "subtitle": "We're here to help you get the most out of Money Flow Tracker",
+      "intro": "Thank you for using Money Flow Tracker. If you're experiencing any issues, we're here to help!",
+      "commonIssues": "Common Issues",
+      "needHelpTitle": "Need Help?",
+      "needHelpText": "Contact our support team and we'll respond within 48 hours.",
+      "sendEmail": "Send Email",
+      "tipsTitle": "Tips & Tricks",
+      "tips": ["Regularly back up your data to avoid losing important information", "Categorize transactions properly for better analytics", "Set realistic budgets based on your spending patterns", "Review your reports monthly to track your financial progress", "Use the savings goals feature to stay motivated"]
+    },
+    "delete": {
+      "subtitle": "Request deletion of your Money Flow Tracker account and all associated data.",
+      "intro": "If you want to delete your Money Flow Tracker account, please follow one of the methods below. We will verify your request and permanently remove your account data within 30 days.",
+      "requestTitle": "How to request deletion",
+      "requestItems": ["Open the Money Flow Tracker app and use the Delete Account option (if available)"],
+      "emailPrefix": "Email",
+      "emailSuffix": "with the subject \"Account Deletion Request\"",
+      "includeTitle": "Please include:",
+      "includeItem": "The email address associated with your account.",
+      "dataTitle": "Data that will be deleted",
+      "dataItems": ["Account information", "Expense and income records", "Budgets and categories", "Cloud backup data stored in Firebase/Firestore", "Profile information"],
+      "retentionTitle": "Data retention",
+      "retentionText": "Account and associated data are permanently deleted within 30 days of request verification. Certain records may be retained if required by law, security, or fraud-prevention purposes.",
+      "contactTitle": "Contact",
+      "contactText": "For account deletion requests, email the MFT Core Team at"
+    },
+    "terms": {
+      "subtitle": "Please read these terms carefully before using our application",
+      "lastUpdated": "Last Updated:",
+      "date": "June 2026",
+      "acceptanceTitle": "Acceptance of Terms",
+      "acceptanceText": "By using Money Flow Tracker, you agree to these Terms and Conditions in their entirety.",
+      "usageTitle": "Application Usage",
+      "usageText": "Money Flow Tracker is provided for personal finance tracking and budgeting purposes only. Users must be at least 13 years old to use this application.",
+      "responsibilitiesTitle": "User Responsibilities",
+      "responsibilitiesItems": ["Maintain accurate financial records", "Keep device credentials and passwords secure", "Use the application lawfully and ethically", "Do not attempt to bypass security measures or access unauthorized features", "Report any suspected security breaches immediately"],
+      "disclaimerTitle": "Disclaimer",
+      "disclaimerText": "Money Flow Tracker does not provide financial, investment, legal, or tax advice. The application is for informational purposes only. Any financial decisions should be made with consultation from qualified professionals.",
+      "liabilityTitle": "Limitation of Liability",
+      "liabilityIntro": "The developer, Nataraja Murthy, shall not be liable for any:",
+      "liabilityItems": ["Financial decisions made using information generated by the application", "Data loss or corruption", "Unauthorized access to user data", "Application errors or malfunctions", "Indirect or consequential damages"],
+      "changesTitle": "Changes to Terms",
+      "changesText": "These Terms and Conditions may be updated periodically. Users will be notified of significant changes. Continued use of the application after changes constitutes acceptance of the new terms.",
+      "lawTitle": "Governing Law",
+      "lawText": "These Terms and Conditions are governed by applicable laws and regulations. Any disputes shall be resolved through appropriate legal channels."
+    }
+  }
+  ,
+  "support": {
+    "issues": {
+      "unable_add": "Unable to add transactions",
+      "backup_restore": "Backup or restore problems",
+      "report_generation": "Report generation issues",
+      "crashes": "Application crashes",
+      "sync_issues": "Account synchronization issues"
+    }
+  }
+}

@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Money Flow Tracker — personal finance app: budgets, transactions, insights, loan management, and secure sync.">
 
     <title>Money Flow Tracker</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./language-picker.css">
 
     <style>
         * {
@@ -159,63 +161,227 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        .features-section {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 22px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(39, 174, 96, 0.08);
+            border-radius: 10px;
+        }
+
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        .skip-link:focus {
+            position: static;
+            width: auto;
+            height: auto;
+            padding: 8px 12px;
+            background: #27ae60;
+            color: #071017;
+            border-radius: 4px;
+            z-index: 9999;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .features-section h2 {
+            color: #27ae60;
+            margin-bottom: 6px;
+            font-size: 1.4rem;
+        }
+
+        .features-section .section-sub {
+            color: #bdc3c7;
+            margin-bottom: 18px;
+        }
+
+        .feature-item {
+            margin-bottom: 14px;
+        }
+
+        .feature-item h4 {
+            color: #a8f0b5;
+            margin-bottom: 6px;
+            font-size: 1.02rem;
+        }
+
+        .feature-item ul {
+            color: #d1d5db;
+            padding-left: 1.15rem;
+            margin: 0;
+        }
+
+        .feature-item ul li {
+            margin-bottom: 6px;
+        }
     </style>
 
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content" data-i18n="nav.skip">Skip to content</a>
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./">
-                <i class="fas fa-money-bill-wave"></i>Money Flow Tracker
-            </a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./">
+                    <i class="fas fa-money-bill-wave"></i><span data-i18n="nav.brand">Money Flow Tracker</span>
+                </a>
+                <div class="language-picker">
+                    <i class="fas fa-globe language-picker__icon" aria-hidden="true"></i>
+                    <label for="mft-lang-select" class="visually-hidden">Choose language</label>
+                    <select id="mft-lang-select" class="language-picker__select" aria-label="Choose language">
+                        <option>Language</option>
+                    </select>
+                    <span id="mft-lang-status" class="visually-hidden" role="status" aria-live="polite"></span>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero-section" id="hero" tabindex="-1" aria-label="Hero">
+            <i class="fas fa-chart-line" aria-hidden="true"></i>
+            <h1 data-i18n="hero.title">Money Flow Tracker</h1>
+            <p data-i18n="hero.subtitle">Manage personal finances, expenses, budgets and savings goals with ease and precision.</p>
+        </section>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+
+        <section class="features-section">
+        <h2 data-i18n="features.heading">Features</h2>
+        <p class="section-sub" data-i18n="features.sub">A concise overview of what Money Flow Tracker offers — organized by capability.</p>
+
+        <div class="feature-item">
+            <h4 data-i18n="features.transaction.title">1. Comprehensive Transaction Management</h4>
+            <ul>
+                <li data-i18n="features.transaction.items.0">Income & Expense Tracking: Log amounts, dates, notes and tags for each transaction.</li>
+                <li data-i18n="features.transaction.items.1">Detailed History: Transactions screen with filtering and search (SearchQuery).</li>
+                <li data-i18n="features.transaction.items.2">Account-Based Organization: Manage multiple accounts (Bank, Cash, Cards).</li>
+            </ul>
         </div>
-    </nav>
 
-    <div class="hero-section">
-        <i class="fas fa-chart-line"></i>
-        <h1>Money Flow Tracker</h1>
-        <p>Manage personal finances, expenses, budgets and savings goals with ease and precision.</p>
-    </div>
+        <div class="feature-item">
+            <h4 data-i18n="features.budget.title">2. Smart Budgeting & Goal Setting</h4>
+            <ul>
+                <li data-i18n="features.budget.items.0">Budget Planning: Create and edit budgets by category (AddEditBudgetDialog).</li>
+                <li data-i18n="features.budget.items.1">Progress Tracking: Visual indicators showing remaining budget.</li>
+                <li data-i18n="features.budget.items.2">Financial Goals: Track long-term savings and commitments.</li>
+            </ul>
+        </div>
+
+        <div class="feature-item">
+            <h4 data-i18n="features.insights.title">3. Advanced Insights & Analytics</h4>
+            <ul>
+                <li data-i18n="features.insights.items.0">Visual Trends: Interactive TrendBarCharts for spending over time.</li>
+                <li data-i18n="features.insights.items.1">Category Breakdown: See which categories consume your budget.</li>
+                <li data-i18n="features.insights.items.2">Data-Driven Decisions: Use history to identify savings opportunities.</li>
+            </ul>
+        </div>
+
+        <div class="feature-item">
+            <h4 data-i18n="features.loan.title">4. Loan & Debt Management</h4>
+            <ul>
+                <li data-i18n="features.loan.items.0">Loan Tracking: Manage borrowed/lent money with LoanSettings and DAO support.</li>
+                <li data-i18n="features.loan.items.1">Repayment Reminders: Keep track of deadlines and commitments.</li>
+            </ul>
+        </div>
+
+        <div class="feature-item">
+            <h4 data-i18n="features.categories.title">5. Personalized Category Management</h4>
+            <ul>
+                <li data-i18n="features.categories.items.0">Custom Categories: Create, edit, and delete categories via CategoriesScreen.</li>
+                <li data-i18n="features.categories.items.1">Pre-seeded Data: Default categories included for a fast start.</li>
+            </ul>
+        </div>
+
+        <div class="feature-item">
+            <h4 data-i18n="features.notifications.title">6. Intelligent Notifications & Reminders</h4>
+            <ul>
+                <li data-i18n="features.notifications.items.0">Daily Summaries: Receive a daily recap of spending.</li>
+                <li data-i18n="features.notifications.items.1">Smart Alerts: WorkManager-driven alerts for budget limits and goals.</li>
+                <li data-i18n="features.notifications.items.2">Core Alerts: High-priority notifications for critical updates.</li>
+            </ul>
+        </div>
+
+        <div class="feature-item">
+            <h4 data-i18n="features.cloud.title">7. Cloud Integration & Security</h4>
+            <ul>
+                <li data-i18n="features.cloud.items.0">Secure Authentication: Firebase Auth and Google Sign-In support.</li>
+                <li data-i18n="features.cloud.items.1">Real-time Sync: Optional Firebase Database sync across devices.</li>
+                <li data-i18n="features.cloud.items.2">Enhanced Security: Google reCAPTCHA and Crashlytics for reliability.</li>
+            </ul>
+        </div>
+
+        <div class="feature-item">
+            <h4 data-i18n="features.premium.title">8. Premium Experience & Maintenance</h4>
+            <ul>
+                <li data-i18n="features.premium.items.0">In-App Purchases: Google Play Billing for premium features.</li>
+                <li data-i18n="features.premium.items.1">User Feedback: Built-in FeedbackScreen for suggestions.</li>
+                <li data-i18n="features.premium.items.2">Seamless Updates: Google Play App Update API integration.</li>
+                <li data-i18n="features.premium.items.3">Modern UI: Built with Jetpack Compose and Material3 (dark-mode ready).</li>
+            </ul>
+        </div>
+
+        <div class="feature-item">
+            <h4 data-i18n="features.privacy.title">9. Privacy-First Approach</h4>
+            <ul>
+                <li data-i18n="features.privacy.items.0">Local Persistence: Room Database as primary on-device storage.</li>
+                <li data-i18n="features.privacy.items.1">Preference Management: DataStore Preferences for settings and onboarding state.</li>
+            </ul>
+        </div>
+    </section>
 
     <div class="main-container">
         <div class="card-grid">
             <a href="./privacy-policy/" class="feature-card">
                 <i class="fas fa-shield-alt"></i>
-                <h3>Privacy Policy</h3>
-                <p>Learn how we protect your data</p>
+                <h3 data-i18n="cards.privacy.title">Privacy Policy</h3>
+                <p data-i18n="cards.privacy.desc">Learn how we protect your data</p>
             </a>
 
             <a href="./terms-and-conditions/" class="feature-card">
                 <i class="fas fa-file-contract"></i>
-                <h3>Terms & Conditions</h3>
-                <p>Review our terms of service</p>
+                <h3 data-i18n="cards.terms.title">Terms & Conditions</h3>
+                <p data-i18n="cards.terms.desc">Review our terms of service</p>
             </a>
 
             <a href="./contact/" class="feature-card">
                 <i class="fas fa-envelope"></i>
-                <h3>Contact Us</h3>
-                <p>Get in touch with our team</p>
+                <h3 data-i18n="cards.contact.title">Contact Us</h3>
+                <p data-i18n="cards.contact.desc">Get in touch with our team</p>
             </a>
 
             <a href="./support/" class="feature-card">
                 <i class="fas fa-headset"></i>
-                <h3>Support</h3>
-                <p>Find answers and get help</p>
+                <h3 data-i18n="cards.support.title">Support</h3>
+                <p data-i18n="cards.support.desc">Find answers and get help</p>
             </a>
 
             <a href="./delete-account/" class="feature-card">
                 <i class="fas fa-user-slash"></i>
-                <h3>Delete Account</h3>
-                <p>Request permanent deletion of your account and data</p>
+                <h3 data-i18n="cards.delete.title">Delete Account</h3>
+                <p data-i18n="cards.delete.desc">Request permanent deletion of your account and data</p>
             </a>
         </div>
-    </div>
+        </div>
+
+    </main>
 
     <footer>
-        © 2026 Money Flow Tracker | Developed by Nataraja Murthy | <a href="https://natarajamurthy.github.io">Portfolio</a>
+        <span data-i18n="footer">© 2026 Money Flow Tracker | Developed by Nataraja Murthy</span> |
+        <a href="https://natarajamurthy.github.io" data-i18n="portfolio">Portfolio</a>
     </footer>
+
+    <script src="./i18n.js"></script>
 
 </body>
 
