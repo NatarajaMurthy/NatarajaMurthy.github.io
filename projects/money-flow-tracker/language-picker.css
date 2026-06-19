@@ -1,0 +1,106 @@
+.language-picker {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin-left: auto;
+    padding: 0.35rem 0.45rem 0.35rem 0.75rem;
+    color: #fff;
+    background: rgba(5, 46, 22, 0.22);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 999px;
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.language-picker:hover {
+    background: rgba(5, 46, 22, 0.34);
+    border-color: rgba(255, 255, 255, 0.65);
+}
+
+.language-picker:focus-within {
+    border-color: #fff;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.24);
+}
+
+.language-picker__icon {
+    flex: 0 0 auto;
+    font-size: 0.95rem;
+    pointer-events: none;
+}
+
+.language-picker__select {
+    width: 10.5rem;
+    min-height: 2rem;
+    padding: 0.15rem 2rem 0.15rem 0.25rem;
+    color: #fff;
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.4;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.language-picker__select:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.language-picker__select:disabled {
+    cursor: wait;
+    opacity: 0.7;
+}
+
+.language-picker__select option {
+    color: #111827;
+    background: #fff;
+}
+
+.language-picker--error {
+    border-color: #fecaca;
+    background: rgba(127, 29, 29, 0.35);
+}
+
+.language-picker__message {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    z-index: 1000;
+    display: none;
+    width: max-content;
+    max-width: min(22rem, calc(100vw - 2rem));
+    padding: 0.55rem 0.75rem;
+    color: #7f1d1d;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.4;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 0.5rem;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.2);
+}
+
+.language-picker--error .language-picker__message {
+    display: block;
+}
+
+@media (max-width: 575.98px) {
+    nav .container-fluid {
+        gap: 0.75rem;
+    }
+
+    nav .navbar-brand {
+        max-width: calc(100% - 5rem);
+        font-size: 1.05rem;
+    }
+
+    .language-picker {
+        padding: 0.35rem 0.5rem;
+    }
+
+    .language-picker__select {
+        width: 7.25rem;
+        padding-right: 1.5rem;
+    }
+}

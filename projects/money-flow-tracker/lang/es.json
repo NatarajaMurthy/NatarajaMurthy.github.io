@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "skip": "Saltar al contenido",
+    "brand": "Seguimiento de Flujo de Dinero",
+    "back": "Volver a Seguimiento de Flujo de Dinero"
+  },
+  "hero": {
+    "title": "Seguimiento de Flujo de Dinero",
+    "subtitle": "Administra finanzas personales, gastos, presupuestos y metas de ahorro con facilidad y precisión."
+  },
+  "features": {
+    "heading": "Características",
+    "sub": "Resumen conciso de lo que ofrece Money Flow Tracker — organizado por capacidades.",
+    "transaction": {
+      "title": "1. Gestión Integral de Transacciones",
+      "items": [
+        "Registro de ingresos y gastos: Registra montos, fechas, notas y etiquetas para cada transacción.",
+        "Historial detallado: Pantalla de transacciones con filtros y búsqueda (SearchQuery).",
+        "Organización por cuentas: Administra múltiples cuentas (Banco, Efectivo, Tarjetas)."
+      ]
+    },
+    "budget": {
+      "title": "2. Presupuestos Inteligentes y Metas",
+      "items": [
+        "Planificación de presupuestos: Crea y edita presupuestos por categoría (AddEditBudgetDialog).",
+        "Seguimiento de progreso: Indicadores visuales del presupuesto restante.",
+        "Metas financieras: Rastrea metas de ahorro a largo plazo."
+      ]
+    },
+    "insights": {
+      "title": "3. Perspectivas y Analíticas Avanzadas",
+      "items": [
+        "Tendencias visuales: Gráficas interactivas TrendBarCharts para el gasto en el tiempo.",
+        "Desglose por categoría: Ve qué categorías consumen tu presupuesto.",
+        "Decisiones basadas en datos: Usa el historial para identificar ahorros."
+      ]
+    },
+    "loan": {
+      "title": "4. Gestión de Préstamos y Deudas",
+      "items": [
+        "Seguimiento de préstamos: Administra dinero prestado/prestado con LoanSettings y DAO.",
+        "Recordatorios de pago: Lleva seguimiento de fechas y compromisos."
+      ]
+    },
+    "categories": {
+      "title": "5. Gestión Personalizada de Categorías",
+      "items": [
+        "Categorías personalizadas: Crea, edita y elimina categorías vía CategoriesScreen.",
+        "Datos pre-cargados: Categorías por defecto incluidas para empezar rápido."
+      ]
+    },
+    "notifications": {
+      "title": "6. Notificaciones y Recordatorios Inteligentes",
+      "items": [
+        "Resúmenes diarios: Recibe un resumen diario de tus gastos.",
+        "Alertas inteligentes: Triggers para límites de presupuesto y metas.",
+        "Alertas críticas: Notificaciones de alta prioridad para actualizaciones importantes."
+      ]
+    },
+    "cloud": {
+      "title": "7. Integración en la Nube y Seguridad",
+      "items": [
+        "Autenticación segura: Firebase Auth y Google Sign-In.",
+        "Sincronización en tiempo real: Firebase Database opcional.",
+        "Seguridad mejorada: Google reCAPTCHA y Crashlytics."
+      ]
+    },
+    "premium": {
+      "title": "8. Experiencia Premium y Mantenimiento",
+      "items": [
+        "Compras dentro de la app: Google Play Billing para funciones premium.",
+        "Retroalimentación: FeedbackScreen integrado para sugerencias.",
+        "Actualizaciones: Integración con App Update API de Google Play.",
+        "UI moderna: Construido con Jetpack Compose y Material3 (modo oscuro listo)."
+      ]
+    },
+    "privacy": {
+      "title": "9. Enfoque de Privacidad",
+      "items": [
+        "Persistencia local: Room Database como almacenamiento primario en el dispositivo.",
+        "Gestión de preferencias: DataStore Preferences para ajustes y estado de onboarding."
+      ]
+    }
+  },
+  "cards": {
+    "privacy": { "title": "Política de Privacidad", "desc": "Conoce cómo protegemos tus datos" },
+    "terms": { "title": "Términos y Condiciones", "desc": "Revisa nuestros términos de servicio" },
+    "contact": { "title": "Contáctanos", "desc": "Comunícate con nuestro equipo" },
+    "support": { "title": "Soporte", "desc": "Encuentra respuestas y ayuda" },
+    "delete": { "title": "Eliminar Cuenta", "desc": "Solicita la eliminación permanente de tu cuenta y datos" }
+  },
+  "footer": "© 2026 Seguimiento de Flujo de Dinero | Desarrollado por Nataraja Murthy | Portfolio",
+  "pages": {
+    "contact": {
+      "subtitle": "¿Necesitas ayuda con Money Flow Tracker? ¡Contáctanos!",
+      "businessTitle": "Consultas comerciales",
+      "websiteTitle": "Sitio web",
+      "developerTitle": "Desarrollador",
+      "developerRole": "Desarrollador Android | Desarrollador Web | Entusiasta de código abierto"
+    },
+    "privacy": {
+      "subtitle": "Nos tomamos tu privacidad en serio",
+      "lastUpdated": "Última actualización:"
+    },
+    "support": {
+      "subtitle": "Estamos aquí para ayudarte a aprovechar Money Flow Tracker",
+      "commonIssues": "Problemas comunes",
+      "needHelpTitle": "¿Necesitas ayuda?",
+      "needHelpText": "Contacta a nuestro equipo de soporte y responderemos dentro de 48 horas.",
+      "sendEmail": "Enviar correo"
+    },
+    "delete": {
+      "subtitle": "Solicita la eliminación de tu cuenta de Money Flow Tracker y todos los datos asociados.",
+      "contactTitle": "Contacto"
+    },
+    "terms": {
+      "subtitle": "Por favor lee estos términos cuidadosamente antes de usar nuestra aplicación",
+      "lastUpdated": "Última actualización:"
+    }
+  }
+
+  ,
+  "support": {
+    "issues": {
+      "unable_add": "No se puede agregar transacciones",
+      "backup_restore": "Problemas con copia de seguridad o restauración",
+      "report_generation": "Problemas con la generación de informes",
+      "crashes": "Bloqueos de la aplicación",
+      "sync_issues": "Problemas de sincronización de cuentas"
+    }
+  }
+}
