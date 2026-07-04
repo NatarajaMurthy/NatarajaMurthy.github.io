@@ -90,7 +90,6 @@
     "delete": { "title": "Delete Account", "desc": "Request permanent deletion of your account and data" }
   },
   "bottomActions": {
-    "title": "Connect with Money Flow Tracker",
     "app": "App Download",
     "youtube": "YouTube",
     "instagram": "Instagram",
