@@ -22,10 +22,14 @@ section {
   padding-top: 80px;
 }
 
-.fab {
-  padding: 16px;
+.social-links .fab,
+.social-links .far {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: large;
   width: 50px;
+  height: 50px;
   text-align: center;
   text-decoration: none;
   margin: 8px;
@@ -35,22 +39,8 @@ section {
   margin: 4px;
 }
 
-.far {
-  padding: 16px;
-  font-size: large;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 8px;
-}
-
-.fab:hover {
-  text-decoration: none;
-  color: white;
-  opacity: 0.7;
-}
-
-.far:hover {
+.social-links .fab:hover,
+.social-links .far:hover {
   text-decoration: none;
   color: white;
   opacity: 0.7;
