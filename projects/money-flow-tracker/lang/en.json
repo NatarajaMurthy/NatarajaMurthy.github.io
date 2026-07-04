@@ -89,6 +89,14 @@
     "support": { "title": "Support", "desc": "Find answers and get help" },
     "delete": { "title": "Delete Account", "desc": "Request permanent deletion of your account and data" }
   },
+  "bottomActions": {
+    "title": "Connect with Money Flow Tracker",
+    "app": "App Download",
+    "youtube": "YouTube",
+    "instagram": "Instagram",
+    "twitter": "Twitter",
+    "telegram": "Join Telegram Community"
+  },
   "footer": "© 2026 Money Flow Tracker | Developed by Nataraja Murthy",
   "portfolio": "Portfolio",
   "pages": {

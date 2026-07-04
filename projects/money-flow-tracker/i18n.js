@@ -13,10 +13,64 @@
   const cache = new Map();
   let currentLanguage = 'en';
   let loadRequest = 0;
+  const themeStorageKey = 'mft_theme';
 
   function getPreferredLanguage(){
     return 'en';
   }
+
+  function getPreferredTheme(){
+    try {
+      const saved = localStorage.getItem(themeStorageKey);
+      if(saved === 'light' || saved === 'dark') return saved;
+    } catch (error) {
+      // Storage may be unavailable in private browsing or local file mode.
+    }
+    return 'dark';
+  }
+
+  function applyTheme(theme){
+    const nextTheme = theme === 'light' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', nextTheme);
+    const toggle = document.getElementById('mft-theme-toggle');
+    if(toggle){
+      const isLight = nextTheme === 'light';
+      toggle.setAttribute('aria-label', isLight ? 'Switch to dark theme' : 'Switch to light theme');
+      toggle.setAttribute('title', isLight ? 'Switch to dark theme' : 'Switch to light theme');
+      toggle.innerHTML = `
+        <i class="fas ${isLight ? 'fa-moon' : 'fa-sun'}" aria-hidden="true"></i>
+        <span class="visually-hidden">${isLight ? 'Switch to dark theme' : 'Switch to light theme'}</span>
+      `;
+    }
+  }
+
+  function setTheme(theme){
+    const nextTheme = theme === 'light' ? 'light' : 'dark';
+    try {
+      localStorage.setItem(themeStorageKey, nextTheme);
+    } catch (error) {
+      // Storage may be unavailable in private browsing or local file mode.
+    }
+    applyTheme(nextTheme);
+  }
+
+  function setupThemeToggle(){
+    if(document.getElementById('mft-theme-toggle')) return;
+    const navContainer = document.querySelector('nav .container-fluid');
+    if(!navContainer) return;
+    const button = document.createElement('button');
+    button.id = 'mft-theme-toggle';
+    button.className = 'theme-toggle';
+    button.type = 'button';
+    button.addEventListener('click', ()=>{
+      const currentTheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+      setTheme(currentTheme === 'light' ? 'dark' : 'light');
+    });
+    navContainer.appendChild(button);
+    applyTheme(document.documentElement.getAttribute('data-theme'));
+  }
+
+  applyTheme(getPreferredTheme());
 
   function getBasePath(){
     let script = document.currentScript;
@@ -135,6 +189,7 @@
     }
 
     const select = document.getElementById('mft-lang-select');
+    setupThemeToggle();
     if(select){
       select.innerHTML = '';
       languages.forEach(language=>{
