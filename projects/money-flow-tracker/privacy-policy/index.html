@@ -196,7 +196,7 @@
 
     <main class="main-container" id="main-content" tabindex="-1">
 
-        <p class="last-updated"><strong data-i18n="pages.privacy.lastUpdated">Last Updated:</strong> <span data-i18n="pages.privacy.date">June 15, 2026</span></p>
+        <p class="last-updated"><strong data-i18n="pages.privacy.lastUpdated">Last Updated:</strong> <span data-i18n="pages.privacy.date">August 29, 2026</span></p>
 
         <div class="policy-section">
             <p data-i18n="pages.privacy.intro">
@@ -218,7 +218,14 @@
                 <li data-i18n="pages.privacy.collectItems.5">Transaction notes</li>
                 <li data-i18n="pages.privacy.collectItems.6">Savings goals</li>
                 <li data-i18n="pages.privacy.collectItems.7">Receipt images uploaded by users (optional)</li>
+                <li data-i18n="pages.privacy.collectItems.8">If you enable SMS-based transaction detection, the sender and content of relevant transaction SMS messages, and the transaction details extracted from them</li>
+                <li data-i18n="pages.privacy.collectItems.9">Device, advertising, diagnostic, and usage information collected by our service providers, as described below</li>
             </ul>
+        </div>
+
+        <h3><i class="fas fa-sms"></i> <span data-i18n="pages.privacy.smsTitle">SMS-Based Transaction Detection</span></h3>
+        <div class="policy-section">
+            <p data-i18n="pages.privacy.smsText">If you choose to enable SMS-based transaction detection, the app accesses relevant transaction messages only to identify and extract transaction information, such as the amount, merchant or sender, date, and account reference. SMS data is used to provide this feature and is not used for advertising, sold, or shared with advertising partners. You can decline or revoke the SMS permission in your device settings; the SMS-based feature will then stop working.</p>
         </div>
 
         <h3><i class="fas fa-cogs"></i> <span data-i18n="pages.privacy.useTitle">How We Use Information</span></h3>
@@ -228,22 +235,33 @@
                 <li data-i18n="pages.privacy.useItems.1">Generate reports and analytics</li>
                 <li data-i18n="pages.privacy.useItems.2">Improve user experience</li>
                 <li data-i18n="pages.privacy.useItems.3">Improve application performance and stability</li>
-                <li data-i18n="pages.privacy.useItems.4">Provide future AI-powered financial insights</li>
+                <li data-i18n="pages.privacy.useItems.4">Maintain security and prevent fraud or misuse</li>
             </ul>
+        </div>
+
+        <h3><i class="fas fa-mobile-alt"></i> <span data-i18n="pages.privacy.storageTitle">Where Information Is Stored</span></h3>
+        <div class="policy-section">
+            <p data-i18n="pages.privacy.storageText">Financial records are primarily stored on your device. If you create an account or enable cloud sync or backup, account and financial data may also be stored using Firebase services so that the selected features can work across devices. Settings and onboarding choices are stored on your device. We do not sell your personal information.</p>
         </div>
 
         <h3><i class="fas fa-network-wired"></i> <span data-i18n="pages.privacy.thirdPartyTitle">Third-Party Services</span></h3>
         <div class="policy-section">
             <p data-i18n="pages.privacy.thirdPartyText">
-                The application may use third-party services that may collect information according to their own privacy
-                policies.
+                The application uses the following third-party services. Their collection and use of data are governed by their own privacy policies.
             </p>
             <ul>
                 <li>Google Play Services</li>
                 <li>Firebase Analytics</li>
                 <li>Firebase Crashlytics</li>
-                <li data-i18n="pages.privacy.adMob">Google AdMob (if advertisements are enabled)</li>
+                <li data-i18n="pages.privacy.adMob">Firebase Authentication and Firebase/Firestore services, when you use account or cloud-sync features</li>
+                <li data-i18n="pages.privacy.adMobAds">Google AdMob for advertising</li>
             </ul>
+        </div>
+
+        <h3><i class="fas fa-ad"></i> <span data-i18n="pages.privacy.adsTitle">Advertising and Consent</span></h3>
+        <div class="policy-section">
+            <p data-i18n="pages.privacy.adsText">We use Google AdMob to show ads. AdMob and its ad partners may process information such as device identifiers, IP address, app interaction, diagnostic information, and approximate location derived from an IP address to deliver and measure ads, prevent fraud, and, where permitted, personalize ads. We do not provide your financial records or SMS content to AdMob for advertising. In the EEA, United Kingdom, and Switzerland, we request the required consent before serving personalized ads. You can review or change your advertising-consent choices in the app where that option is available.</p>
+            <p><a href="https://business.safety.google/privacy/" target="_blank" rel="noopener noreferrer" data-i18n="pages.privacy.googleDataLink">Learn how Google uses information from sites and apps that use its services.</a></p>
         </div>
 
         <h3><i class="fas fa-lock"></i> <span data-i18n="pages.privacy.securityTitle">Data Security</span></h3>
@@ -257,10 +275,7 @@
 
         <h3><i class="fas fa-hourglass-half"></i> <span data-i18n="pages.privacy.retentionTitle">Data Retention</span></h3>
         <div class="policy-section">
-            <p data-i18n="pages.privacy.retentionText">
-                User data is retained only as long as necessary to provide application functionality and comply with
-                applicable legal requirements.
-            </p>
+            <p data-i18n="pages.privacy.retentionText">User data is retained only as long as necessary to provide application functionality and comply with applicable legal requirements. When a verified account-deletion request is completed, associated account data is permanently deleted within 30 days, except where retention is required for law, security, or fraud prevention.</p>
         </div>
 
         <h3><i class="fas fa-child"></i> <span data-i18n="pages.privacy.childrenTitle">Children's Privacy</span></h3>
@@ -275,9 +290,10 @@
         <div class="policy-section">
             <ul>
                 <li data-i18n="pages.privacy.rightsItems.0">Review your information</li>
-                <li data-i18n="pages.privacy.rightsItems.1">Delete your application data</li>
+                <li data-i18n="pages.privacy.rightsItems.1">Request deletion of your application data</li>
                 <li data-i18n="pages.privacy.rightsItems.2">Uninstall the application at any time</li>
             </ul>
+            <p><a href="../delete-account/" data-i18n="pages.privacy.deleteLink">Learn how to request account and data deletion.</a></p>
         </div>
 
         <h3><i class="fas fa-refresh"></i> <span data-i18n="pages.privacy.changesTitle">Changes to This Privacy Policy</span></h3>
