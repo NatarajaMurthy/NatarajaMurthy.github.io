@@ -83,6 +83,7 @@
     }
   },
   "cards": {
+    "userGuide": { "title": "User Guide", "desc": "Read the complete app guide and feature manual" },
     "privacy": { "title": "Privacy Policy", "desc": "Learn how we protect your data" },
     "terms": { "title": "Terms & Conditions", "desc": "Review our terms of service" },
     "contact": { "title": "Contact Us", "desc": "Get in touch with our team" },
