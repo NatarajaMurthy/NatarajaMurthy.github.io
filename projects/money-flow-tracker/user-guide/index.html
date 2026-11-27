@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MoneyFlowTracker - User Guide &amp; Feature Manual</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto+Mono:wght@400;500&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+    @page {
+        size: A4;
+        margin: 15mm 15mm 15mm 15mm;
+        @bottom-right {
+            content: "Page " counter(page);
+            font-family: 'Roboto', sans-serif;
+            font-size: 8pt;
+            color: #5f6368;
+        }
+    }
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 10pt;
+        line-height: 1.6;
+        color: #202124;
+        background-color: #ffffff;
+        margin: 0;
+        padding: 30px 45px;
+    }
+    .doc-header-banner {
+        border-bottom: 2px solid #1a73e8;
+        padding-bottom: 14px;
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .badge {
+        background: #e6f4ea;
+        color: #137333;
+        padding: 4px 10px;
+        border-radius: 12px;
+        font-weight: 500;
+        font-size: 9pt;
+        display: inline-block;
+    }
+    h1, h2, h3, h4 {
+        font-family: 'Google Sans', 'Roboto', sans-serif;
+        color: #1a73e8;
+        font-weight: 500;
+        margin-top: 1.4em;
+        margin-bottom: 0.5em;
+        page-break-after: avoid;
+    }
+    h1 {
+        font-size: 20pt;
+        color: #202124;
+        border-bottom: 1px solid #dadce0;
+        padding-bottom: 8px;
+        margin-top: 0;
+    }
+    h2 {
+        font-size: 13.5pt;
+        border-bottom: 1px solid #f1f3f4;
+        padding-bottom: 4px;
+        color: #1a73e8;
+    }
+    h3 {
+        font-size: 11pt;
+        color: #202124;
+        font-weight: 700;
+    }
+    p {
+        margin: 0.6em 0;
+        color: #3c4043;
+    }
+    a {
+        color: #1a73e8;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    code {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 9pt;
+        background-color: #f1f3f4;
+        color: #c5221f;
+        padding: 2px 5px;
+        border-radius: 4px;
+    }
+    .callout-card {
+        background-color: #e8f0fe;
+        border-left: 4px solid #1a73e8;
+        border-radius: 0 6px 6px 0;
+        padding: 10px 14px;
+        margin: 12px 0;
+        font-size: 9.5pt;
+        color: #174ea6;
+        page-break-inside: avoid;
+    }
+    .table-container {
+        width: 100%;
+        margin: 14px 0;
+        page-break-inside: avoid;
+        overflow-x: auto;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 9.5pt;
+    }
+    th, td {
+        border: 1px solid #dadce0;
+        padding: 8px 10px;
+        text-align: left;
+    }
+    th {
+        background-color: #f1f3f4;
+        font-weight: 500;
+        color: #202124;
+    }
+    tr:nth-child(even) td {
+        background-color: #fafbfb;
+    }
+    ul, ol {
+        margin: 0.5em 0;
+        padding-left: 22px;
+        color: #3c4043;
+    }
+    li {
+        margin: 0.3em 0;
+    }
+    hr {
+        border: none;
+        border-top: 1px solid #dadce0;
+        margin: 25px 0;
+    }
+    .math-display {
+        display: block;
+        margin: 10px 0;
+        padding: 10px;
+        background: #f8f9fa;
+        border-left: 3px solid #1a73e8;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 9.5pt;
+        color: #202124;
+    }
+    .math-inline {
+        font-family: 'Roboto Mono', monospace;
+        background: #f1f3f4;
+        padding: 1px 4px;
+        border-radius: 3px;
+    }
+</style>
+</head>
+<body>
+<div class="doc-header-banner">
+    <div>
+        <strong style="font-size: 11pt; color: #1a73e8;">MoneyFlowTracker User Documentation</strong>
+        <div style="font-size: 8.5pt; color: #5f6368;">Complete Application Guide &amp; User Manual</div>
+    </div>
+    <span class="badge">Official App Guide</span>
+</div>
+
+<h1 id="moneyflowtracker-user-guide-feature-manual">MoneyFlowTracker User Guide & Feature Manual</h1>
+
+<p>Welcome to the official <strong>MoneyFlowTracker User Guide</strong>. This comprehensive manual is designed to help you master every aspect of your personal finances—from tracking everyday expenses and automating bank transaction logging, to setting smart budgets, eliminating debt, and planning for financial freedom with generative AI.</p>
+
+<hr/>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#1-introduction-to-moneyflowtracker">Introduction to MoneyFlowTracker</a></li>
+<li><a href="#2-getting-started--initial-setup">Getting Started & Initial Setup</a></li>
+<li><a href="#3-managing-accounts--balances">Managing Accounts & Balances</a></li>
+<li><a href="#4-recording-transactions-expenses-income--transfers">Recording Transactions (Expenses, Income & Transfers)</a></li>
+<li><a href="#5-automated-bank-transaction-detection">Automated Bank Transaction Detection</a></li>
+<li><a href="#6-smart-receipt-scanning-ocr--voice-input">Smart Receipt Scanning (OCR) & Voice Input</a></li>
+<li><a href="#7-splitting-bills--group-expenses">Splitting Bills & Group Expenses</a></li>
+<li><a href="#8-budgets--spending-limits">Budgets & Spending Limits</a></li>
+<li><a href="#9-financial-goals--savings-targets">Financial Goals & Savings Targets</a></li>
+<li><a href="#10-loans--debt-manager-borrowed--lent">Loans & Debt Manager (Borrowed & Lent)</a></li>
+<li><a href="#11-investment--portfolio-tracking">Investment & Portfolio Tracking</a></li>
+<li><a href="#12-financial-health--freedom-simulator">Financial Health & Freedom Simulator</a></li>
+<li><a href="#13-ai-financial-advisor-gemini-chat">AI Financial Advisor (Gemini Chat)</a></li>
+<li><a href="#14-gamification-streaks-coins--rewards">Gamification: Streaks, Coins & Rewards</a></li>
+<li><a href="#15-home-screen-widgets-quick-add--dashboard">Home Screen Widgets (Quick Add & Dashboard)</a></li>
+<li><a href="#16-security-privacy--biometric-lock">Security, Privacy & Biometric Lock</a></li>
+<li><a href="#17-backups-cloud-sync--data-export">Backups, Cloud Sync & Data Export</a></li>
+<li><a href="#18-frequently-asked-questions-faq--troubleshooting">Frequently Asked Questions (FAQ) & Troubleshooting</a></li>
+
+</ol>
+<hr/>
+
+<h2 id="1-introduction-to-moneyflowtracker">1. Introduction to MoneyFlowTracker</h2>
+
+<p>MoneyFlowTracker is an <strong>offline-first, privacy-respecting financial operating system</strong> for Android. Unlike conventional expense trackers that sell your data or require sensitive bank login credentials, MoneyFlowTracker keeps your financial data <strong>encrypted on your device</strong> with military-grade 256-bit AES encryption.</p>
+
+<h3 id="core-highlights">Core Highlights</h3>
+<ul>
+<li><strong>100% Privacy & Local Security</strong>: Your records remain on your phone unless you explicitly choose to back them up to your private Google Drive or sync via encrypted cloud.</li>
+<li><strong>Hands-Free Detection</strong>: Detects incoming bank SMS alerts and notifications to record expenses with a single tap.</li>
+<li><strong>Smart AI Companion</strong>: Built-in Google Gemini financial assistant analyzes your habits and gives personalized tips.</li>
+<li><strong>Comprehensive Wealth Overview</strong>: One consolidated dashboard for Cash, Bank Accounts, Credit Cards, Debts, and Investments.</li>
+
+</ul>
+<hr/>
+
+<h2 id="2-getting-started-initial-setup">2. Getting Started & Initial Setup</h2>
+
+<p>When you open MoneyFlowTracker for the first time, a streamlined setup wizard guides you through essential configurations:</p>
+
+<h3 id="step-1-choose-your-base-currency">Step 1: Choose Your Base Currency</h3>
+<ol>
+<li>Select your local currency from the international currency list (e.g., USD <code><span class="math-inline"></code>, EUR <code>€</code>, GBP <code>£</code>, INR <code>₹</code>, CAD <code></span></code>, JPY <code>¥</code>).</li>
+<li>Your base currency applies across all dashboards, budget limits, and reports. You can update this later in <strong>Settings > Currency</strong>.</li>
+
+</ol>
+<h3 id="step-2-select-your-account-mode">Step 2: Select Your Account Mode</h3>
+<p>MoneyFlowTracker accommodates your preferred privacy level:</p>
+<ul>
+<li><strong>Guest Mode (Free & Offline)</strong>: No sign-in required. Your data is stored exclusively on your device.</li>
+<li><strong>Google Account (Free)</strong>: Sign in with your Google account to enable automated, private backups to your personal Google Drive app space.</li>
+<li><strong>Elite / Premium</strong>: Unlocks real-time cross-device cloud sync, unlimited AI queries, advanced analytics, and custom app icons.</li>
+
+</ul>
+<h3 id="step-3-grant-permissions-optional-but-recommended">Step 3: Grant Permissions (Optional but Recommended)</h3>
+<ul>
+<li><strong>Notifications</strong>: Required to deliver daily evening summaries, budget alerts, and loan due reminders.</li>
+<li><strong>SMS (Optional)</strong>: Enables automatic transaction detection from your incoming bank alerts.</li>
+
+</ul>
+<hr/>
+
+<h2 id="3-managing-accounts-balances">3. Managing Accounts & Balances</h2>
+
+<p>Accounts represent the physical or digital containers holding your money.</p>
+
+<h3 id="account-types-supported">Account Types Supported</h3>
+<ul>
+<li><strong>Cash / Wallet</strong>: Physical cash on hand.</li>
+<li><strong>Bank Accounts</strong>: Savings and checking accounts.</li>
+<li><strong>Credit Cards</strong>: Tracks borrowed limits, card payments, and outstanding balances.</li>
+<li><strong>Digital Wallets</strong>: PayPal, Apple Cash, Google Pay balance, Paytm, etc.</li>
+<li><strong>Investment Accounts</strong>: Brokerages and mutual fund portfolios.</li>
+
+</ul>
+<h3 id="how-to-add-or-edit-an-account">How to Add or Edit an Account</h3>
+<ol>
+<li>From the bottom navigation, tap <strong>Menu</strong> and select <strong>Accounts</strong>.</li>
+<li>Tap the floating <strong>+ Add Account</strong> button.</li>
+<li>Enter the <strong>Account Name</strong> (e.g., "Chase Checking", "Cash Wallet").</li>
+<li>Enter the <strong>Initial Balance</strong>.</li>
+<li>Select the <strong>Account Type</strong> and choose a visual color and icon.</li>
+<li>Tap <strong>Save</strong>. Your total net worth recalculates automatically on the Home screen.</li>
+
+</ol>
+<div class="callout-card"><strong>Tip</strong>: When paying credit card bills, use the <strong>Transfer</strong> feature to move money from your Bank Account to your Credit Card. This prevents double-counting expenses!</div>
+
+<hr/>
+
+<h2 id="4-recording-transactions-expenses-income-transfers">4. Recording Transactions (Expenses, Income & Transfers)</h2>
+
+<p>Logging your money flow is fast, flexible, and intuitive.</p>
+
+<h3 id="manual-transaction-entry">Manual Transaction Entry</h3>
+<ol>
+<li>Tap the primary <strong>+ (Add)</strong> button in the bottom navigation bar.</li>
+<li>Choose the transaction type:</li>
+</ol>
+<p>- <strong>Expense</strong>: Money going out (e.g., Groceries, Rent, Dining).</p>
+<p>- <strong>Income</strong>: Money coming in (e.g., Salary, Freelancing, Dividends).</p>
+<p>- <strong>Transfer</strong>: Moving funds between your accounts (e.g., ATM Cash Withdrawal).</p>
+<ol>
+<li>Enter the <strong>Amount</strong> using the built-in numeric keypad.</li>
+<li>Select the appropriate <strong>Category</strong> and the source <strong>Account</strong>.</li>
+<li><em>(Optional)</em> Add a <strong>Note</strong>, <strong>Merchant/Payee Name</strong>, or attach a photo of your receipt.</li>
+<li>Tap <strong>Save Transaction</strong>.</li>
+
+</ol>
+<hr/>
+
+<h2 id="5-automated-bank-transaction-detection">5. Automated Bank Transaction Detection</h2>
+
+<p>Tired of manually entering every cup of coffee? MoneyFlowTracker can automatically detect transactions from banking alerts!</p>
+
+<h3 id="how-automated-detection-works">How Automated Detection Works</h3>
+<ol>
+<li>When your bank sends an SMS or notification (e.g., <em>"Debited INR 450.00 at Starbucks on Card ending 1234"</em>), MoneyFlowTracker securely parses the message.</li>
+<li>The app never uploads your messages to third-party servers. Matching is done locally using rule-based recognition patterns.</li>
+<li>A non-intrusive notification appears: <strong>"Detected: $4.50 at Starbucks. Confirm?"</strong></li>
+<li>With one tap on <strong>Confirm</strong>, the transaction is permanently recorded and your account balance is updated.</li>
+
+</ol>
+<h3 id="reviewing-detected-transactions">Reviewing Detected Transactions</h3>
+<ul>
+<li>Open <strong>Menu > Detected Transactions</strong> to view all staged incoming transactions.</li>
+<li>You can approve, edit categories, or dismiss unrecognized alerts in bulk.</li>
+
+</ul>
+<div class="callout-card"><strong>Privacy Guarantee</strong>: MoneyFlowTracker never reads personal OTPs, private chats, or non-financial messages. The parser activates strictly on financial keywords.</div>
+
+<hr/>
+
+<h2 id="6-smart-receipt-scanning-ocr-voice-input">6. Smart Receipt Scanning (OCR) & Voice Input</h2>
+
+<h3 id="camera-receipt-scanner-ocr">Camera Receipt Scanner (OCR)</h3>
+<ol>
+<li>On the <strong>Add Transaction</strong> screen, tap the <strong>Camera / Scan</strong> icon.</li>
+<li>Snap a photo of your physical store or restaurant receipt (or select from your photo gallery).</li>
+<li>The on-device optical character recognition automatically reads the <strong>Total Amount</strong>, <strong>Date</strong>, and <strong>Merchant Name</strong>, pre-populating your form instantly.</li>
+
+</ol>
+<h3 id="voice-input-speech-to-text">Voice Input (Speech-to-Text)</h3>
+<ol>
+<li>Tap the <strong>Microphone</strong> icon on the Add screen or use the <strong>1x1 Voice Add Widget</strong> on your home screen.</li>
+<li>Speak naturally: <em>"Spent 25 dollars on lunch at Subway using Cash."</em></li>
+<li>The AI engine parses your words into the correct amount, category, and account!</li>
+
+</ol>
+<hr/>
+
+<h2 id="7-splitting-bills-group-expenses">7. Splitting Bills & Group Expenses</h2>
+
+<p>Sharing expenses with roommates, partners, or travel companions is effortless.</p>
+
+<h3 id="how-to-split-an-expense">How to Split an Expense</h3>
+<ol>
+<li>Open any recorded transaction or tap <strong>Add > Split Transaction</strong>.</li>
+<li>Select an existing <strong>Group</strong> (e.g., "Apartment 4B", "Road Trip 2026") or create a new group.</li>
+<li>Choose how to divide the cost:</li>
+</ol>
+<p>- <strong>Equally</strong>: Divides the total bill evenly among selected members.</p>
+<p>- <strong>Custom Amounts</strong>: Specify exact contributions per person.</p>
+<ol>
+<li>The app tracks who owes whom and calculates settlement balances without confusing math.</li>
+
+</ol>
+<hr/>
+
+<h2 id="8-budgets-spending-limits">8. Budgets & Spending Limits</h2>
+
+<p>Take control of impulsive spending by setting proactive monthly targets.</p>
+
+<h3 id="setting-up-a-category-budget">Setting Up a Category Budget</h3>
+<ol>
+<li>Navigate to <strong>Budgets</strong> from the bottom navigation or menu.</li>
+<li>Tap <strong>Add Budget</strong> and select a category (e.g., "Dining Out", "Shopping", "Entertainment").</li>
+<li>Enter your <strong>Monthly Spending Limit</strong> (e.g., $300 / month).</li>
+<li>Save the budget.</li>
+
+</ol>
+<h3 id="tracking-budget-progress">Tracking Budget Progress</h3>
+<ul>
+<li><strong>Green Progress Bar (< 75%)</strong>: You are safely within your budget.</li>
+<li><strong>Amber Progress Bar (75% – 90%)</strong>: Approaching the spending limit.</li>
+<li><strong>Red Alert (> 100%)</strong>: Over budget! MoneyFlowTracker delivers a high-priority alert when a transaction pushes you past 100%.</li>
+
+</ul>
+<hr/>
+
+<h2 id="9-financial-goals-savings-targets">9. Financial Goals & Savings Targets</h2>
+
+<p>Turn your dreams into realistic milestones—whether building a 6-month emergency fund, saving for a home down payment, or booking a vacation.</p>
+
+<h3 id="creating-a-goal">Creating a Goal</h3>
+<ol>
+<li>Go to <strong>Goals</strong> in the app menu.</li>
+<li>Tap <strong>+ Add Goal</strong>.</li>
+<li>Name your goal (e.g., "Emergency Fund", "New Laptop").</li>
+<li>Specify the <strong>Target Amount</strong> and desired <strong>Target Date</strong>.</li>
+<li>As you save money, tap <strong>Contribute</strong> to link savings transactions toward your goal.</li>
+<li>Watch your progress ring fill up and celebrate with milestone badges!</li>
+
+</ol>
+<hr/>
+
+<h2 id="10-loans-debt-manager-borrowed-lent">10. Loans & Debt Manager (Borrowed & Lent)</h2>
+
+<p>Never forget who owes you money—or whom you need to pay back.</p>
+
+<h3 id="two-loan-modes">Two Loan Modes</h3>
+<ol>
+<li><strong>Borrowed (I Owe)</strong>: Personal loans, mortgages, vehicle financing, or money borrowed from friends.</li>
+<li><strong>Lent (They Owe Me)</strong>: Money lent to colleagues, friends, or family members.</li>
+
+</ol>
+<h3 id="tracking-repayments-emis">Tracking Repayments & EMIs</h3>
+<ul>
+<li>Record individual partial payments against any loan.</li>
+<li>View remaining principal balances and cumulative repayment history.</li>
+<li>Set automated reminders to alert you before an EMI or payment deadline arrives.</li>
+
+</ul>
+<hr/>
+
+<h2 id="11-investment-portfolio-tracking">11. Investment & Portfolio Tracking</h2>
+
+<p>Consolidate your long-term assets alongside your daily cash flow.</p>
+
+<h3 id="supported-asset-classes">Supported Asset Classes</h3>
+<ul>
+<li><strong>Public Equities (Stocks)</strong>: Global and domestic stock holdings.</li>
+<li><strong>Mutual Funds & ETFs</strong>: Systematic investment plans (SIPs).</li>
+<li><strong>Precious Metals & Crypto</strong>: Gold, Silver, and digital asset balances.</li>
+<li><strong>Fixed Deposits & Bonds</strong>: Term deposits and guaranteed return assets.</li>
+
+</ul>
+<h3 id="features">Features</h3>
+<ul>
+<li>Enter buy price, quantities, and current market valuations.</li>
+<li>View your overall <strong>Asset vs. Liability</strong> balance sheet in the <strong>Financial Overview</strong> screen.</li>
+
+</ul>
+<hr/>
+
+<h2 id="12-financial-health-freedom-simulator">12. Financial Health & Freedom Simulator</h2>
+
+<p>MoneyFlowTracker transforms raw numbers into actionable financial intelligence.</p>
+
+<h3 id="financial-health-score-0-to-100">Financial Health Score (0 to 100)</h3>
+<p>Located directly on your Home screen, your Health Score evaluates four critical pillars:</p>
+<ol>
+<li><strong>Savings Rate (30%)</strong>: How much surplus income you retain each month.</li>
+<li><strong>Budget Discipline (30%)</strong>: How consistently you stay within category limits.</li>
+<li><strong>Emergency Buffer (20%)</strong>: Progress toward having 3 to 6 months of living expenses saved.</li>
+<li><strong>Debt-to-Income (20%)</strong>: The proportion of your earnings allocated to debt payments.</li>
+
+</ol>
+<h3 id="financial-freedom-progress-ffp">Financial Freedom Progress (FFP)</h3>
+<p>Measures your journey toward financial independence:</p>
+<p><span class="math-display">\text{FFP Score} = \left( \frac{\text{Monthly Passive Income}}{\text{Average Monthly Expenses}} \right) \times 100</span></p>
+<p>When your score reaches <strong>100%</strong>, your passive income completely covers your living expenses!</p>
+
+<h3 id="future-simulator">Future Simulator</h3>
+<p>Project your wealth 5, 10, or 25 years into the future using compound interest projections based on your real savings rate.</p>
+
+<hr/>
+
+<h2 id="13-ai-financial-advisor-gemini-chat">13. AI Financial Advisor (Gemini Chat)</h2>
+
+<p>Meet your private financial consultant, powered by Google Gemini.</p>
+
+<h3 id="how-to-access-ai-chat">How to Access AI Chat</h3>
+<ul>
+<li>Tap the <strong>Chat / Sparkle</strong> icon in the top app bar or menu.</li>
+
+</ul>
+<h3 id="sample-questions-you-can-ask">Sample Questions You Can Ask</h3>
+<ul>
+<li><em>"How much did I spend on food and dining over the last 3 months?"</em></li>
+<li><em>"Based on my current spending, how can I save $200 extra each month?"</em></li>
+<li><em>"What is my highest recurring expense?"</em></li>
+<li><em>"Simulate what happens if I pay off my car loan 6 months early."</em></li>
+
+</ul>
+<div class="callout-card">All questions are processed securely, and your personal identity is never attached to AI prompts.</div>
+
+<hr/>
+
+<h2 id="14-gamification-streaks-coins-rewards">14. Gamification: Streaks, Coins & Rewards</h2>
+
+<p>Staying consistent with money tracking can be challenging. MoneyFlowTracker makes it rewarding!</p>
+
+<h3 id="daily-streak-bonus">Daily Streak Bonus</h3>
+<ul>
+<li>Log at least one transaction or open the app daily to build your active streak.</li>
+<li>Collect daily bonus coins with consecutive-day multipliers.</li>
+
+</ul>
+<h3 id="earning-spending-coins">Earning & Spending Coins</h3>
+<ul>
+<li><strong>Earn Coins by</strong>: Logging daily expenses, creating budgets, hitting savings goals, and referring friends.</li>
+<li><strong>Spend Coins on</strong>:</li>
+</ul>
+<p>- Unlocking premium visual app icons (e.g., Luxury Gold, Minimalist Dark).</p>
+<p>- Unlocking custom dark & OLED themes.</p>
+
+<hr/>
+
+<h2 id="15-home-screen-widgets-quick-add-dashboard">15. Home Screen Widgets (Quick Add & Dashboard)</h2>
+
+<p>Interact with MoneyFlowTracker right from your Android home screen without launching the full app.</p>
+
+<h3 id="1-finance-dashboard-widget-4x2-4x3">1. Finance Dashboard Widget (4x2 / 4x3)</h3>
+<p>Displays your current month's total Income, Expenses, and Net Balance with quick shortcut buttons.</p>
+
+<h3 id="2-quick-add-widget-2x2-4x1">2. Quick Add Widget (2x2 / 4x1)</h3>
+<p>One-tap access to record Expenses, Income, Transfers, or Scan Receipts.</p>
+
+<h3 id="3-voice-add-widget-1x1">3. Voice Add Widget (1x1)</h3>
+<p>A single compact launcher icon that immediately opens speech recognition to log expenses hands-free.</p>
+
+<h4 id="how-to-add-widgets">How to Add Widgets:</h4>
+<ol>
+<li>Long-press any empty space on your Android home screen.</li>
+<li>Select <strong>Widgets</strong>.</li>
+<li>Scroll to <strong>MoneyFlowTracker</strong>.</li>
+<li>Drag and drop your preferred widget onto your home screen.</li>
+
+</ol>
+<hr/>
+
+<h2 id="16-security-privacy-biometric-lock">16. Security, Privacy & Biometric Lock</h2>
+
+<p>Your financial peace of mind is our highest engineering priority.</p>
+
+<h3 id="biometric-app-lock">Biometric App Lock</h3>
+<ol>
+<li>Open <strong>Settings > Security & Privacy</strong>.</li>
+<li>Toggle on <strong>Biometric Lock</strong>.</li>
+<li>Choose your preferred authentication method: <strong>Fingerprint</strong>, <strong>Face Unlock</strong>, or <strong>Device PIN/Pattern</strong>.</li>
+<li>Configure the auto-lock timer (Immediate, 1 Minute, or 5 Minutes).</li>
+
+</ol>
+<h3 id="hardware-backed-data-encryption">Hardware-Backed Data Encryption</h3>
+<p>All records stored on your phone are continuously protected with <strong>256-bit AES SQLCipher encryption</strong>, linked to your device's hardware Android Keystore. Even if someone gains physical access to your phone's file storage, your database cannot be read without the cryptographic key.</p>
+
+<hr/>
+
+<h2 id="17-backups-cloud-sync-data-export">17. Backups, Cloud Sync & Data Export</h2>
+
+<h3 id="automated-google-drive-backups">Automated Google Drive Backups</h3>
+<ol>
+<li>Navigate to <strong>Profile > Backup & Restore</strong>.</li>
+<li>Tap <strong>Sign in with Google</strong>.</li>
+<li>Toggle on <strong>Automatic Daily Backups</strong>.</li>
+<li>Backups are stored in your private Google Drive AppData folder, ensuring total isolation from other files.</li>
+
+</ol>
+<h3 id="manual-local-backup-db-json">Manual Local Backup (.db / JSON)</h3>
+<ul>
+<li>Create an encrypted snapshot at any time and save it to your phone storage, SD card, or email it to yourself.</li>
+
+</ul>
+<h3 id="exporting-reports-pdf-excel-csv">Exporting Reports (PDF & Excel / CSV)</h3>
+<ol>
+<li>Go to <strong>Transactions</strong> or <strong>Financial Overview</strong>.</li>
+<li>Tap the <strong>Export</strong> icon.</li>
+<li>Select your date range and file format (<strong>Excel .xlsx</strong>, <strong>CSV</strong>, or <strong>Formatted PDF Report</strong>).</li>
+<li>Tap <strong>Generate & Share</strong> to send the report via WhatsApp, email, or Google Drive.</li>
+
+</ol>
+<hr/>
+
+<h2 id="18-frequently-asked-questions-faq-troubleshooting">18. Frequently Asked Questions (FAQ) & Troubleshooting</h2>
+
+<h3 id="q1-is-moneyflowtracker-free-to-use">Q1: Is MoneyFlowTracker free to use?</h3>
+<p><strong>Yes.</strong> All core tracking features, offline encryption, manual backups, category budgets, loans, and standard reports are completely free. Optional Elite subscriptions unlock real-time multi-device cloud sync and unlimited AI prompts.</p>
+
+<h3 id="q2-can-the-app-access-my-bank-accounts-or-money">Q2: Can the app access my bank accounts or money?</h3>
+<p><strong>No.</strong> MoneyFlowTracker is read-only for incoming notification and SMS alerts. It has zero capability to move money, initiate transfers, or access your bank credentials.</p>
+
+<h3 id="q3-what-happens-if-i-switch-to-a-new-phone">Q3: What happens if I switch to a new phone?</h3>
+<ul>
+<li><strong>If using Google Drive</strong>: Simply install MoneyFlowTracker on your new device, sign in with your Google account, and tap <strong>Restore from Drive</strong>.</li>
+<li><strong>If using Local Backups</strong>: Copy your <code>.db</code> backup file to your new device and select <strong>Restore from File</strong>.</li>
+
+</ul>
+<h3 id="q4-why-are-bank-sms-not-detecting-automatically">Q4: Why are bank SMS not detecting automatically?</h3>
+<ol>
+<li>Ensure the SMS permission is granted in <strong>Settings > Permissions</strong>.</li>
+<li>Verify your bank's sender ID is not marked as spam in your default SMS app.</li>
+<li>If using notification tracking, ensure <strong>Notification Listener</strong> access is enabled in Android System Settings.</li>
+
+</ol>
+<hr/>
+
+<p><em>Thank you for choosing MoneyFlowTracker—empowering your journey toward financial freedom.</em></p>
+
+
+<hr/>
+<div style="text-align: center; font-size: 8pt; color: #70757a; margin-top: 20px;">
+    MoneyFlowTracker • Master Your Finances with Privacy, Automation &amp; Intelligence • Version 0.3.21
+</div>
+</body>
+</html>
